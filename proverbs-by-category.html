@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proverbs Wisdom Units - By Category</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: Georgia, Times, serif;
+            background: #fafafa;
+            color: #333;
+            line-height: 1.7;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            padding: 30px 20px;
+            margin: -20px -20px 30px -20px;
+            text-align: center;
+        }
+        
+        h1 { font-size: 1.8em; margin-bottom: 10px; }
+        h2 { font-size: 1.3em; margin: 40px 0 20px; color: #2c3e50; border-bottom: 3px solid #c9a227; padding-bottom: 10px; }
+        h3 { font-size: 1.1em; color: #34495e; margin: 30px 0 15px; text-transform: uppercase; letter-spacing: 1px; background: #ecf0f1; padding: 10px; border-radius: 5px; }
+        
+        .stats {
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .stat-box {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .stat-box .number { font-size: 2em; font-weight: bold; color: #c9a227; }
+        .stat-box .label { font-size: 0.9em; color: #666; }
+        
+        .category-nav {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .category-nav a {
+            background: #2c3e50;
+            color: white;
+            padding: 8px 14px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        
+        .category-nav a:hover { background: #c9a227; }
+        
+        .category-section {
+            margin: 40px 0;
+        }
+        
+        .unit {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+        .unit.multi { border-left: 4px solid #c9a227; }
+        .unit.single { border-left: 4px solid #95a5a6; }
+        
+        .unit-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-bottom: 12px;
+        }
+        
+        .unit-ref {
+            font-size: 1.15em;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .chapter-tag {
+            background: #34495e;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.8em;
+        }
+        
+        .verse-count {
+            background: #c9a227;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.75em;
+            margin-left: 8px;
+        }
+        
+        .unit-text {
+            font-family: Georgia, serif;
+            font-size: 1.05em;
+            line-height: 1.7;
+            color: #333;
+            margin: 12px 0;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+        
+        .secondary-cats {
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+        
+        .secondary-cat {
+            background: #bdc3c7;
+            color: #2c3e50;
+            padding: 3px 10px;
+            border-radius: 12px;
+            margin-right: 6px;
+            font-size: 0.85em;
+        }
+        
+        .themes {
+            margin-top: 10px;
+            font-size: 0.82em;
+            color: #666;
+        }
+        
+        .theme-tag {
+            background: #e8f4f8;
+            color: #2980b9;
+            padding: 2px 8px;
+            border-radius: 8px;
+            margin-right: 5px;
+        }
+        
+        .subcategory-suggest {
+            background: #fff9e6;
+            border-left: 3px solid #f39c12;
+            padding: 12px 15px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .subcategory-suggest h4 { color: #d68910; margin-bottom: 8px; }
+        .subcategory-suggest ul { padding-left: 20px; }
+        .subcategory-suggest li { margin: 5px 0; }
+        
+        @media (max-width: 600px) {
+            body { padding: 15px; }
+            h1 { font-size: 1.5em; }
+            .unit-header { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>📖 Proverbs Wisdom Units</h1>
+    <p>Organized by Category | 98 Complete Teachings | 243 Verses</p>
+</header>
+
+<div class="stats">
+    <h2>📊 Category Overview</h2>
+    <p>Click a category below to jump to that section</p>
+    <div class="category-nav" id="nav"></div>
+</div>
+
+<div id="content"></div>
+
+<script>
+const subcategoryMap = {
+    "Wealth & Possessions": {
+        subcategories: ["Nature of Wealth", "Rich vs Poor", "Temporary vs Enduring", "Inherited vs Earned", "Blessing and Curse"],
+        icon: "💰",
+        theme: "What wealth is and isn't"
+    },
+    "Diligence & Work": {
+        subcategories: ["The Sluggard", "The Diligent", "Planning and Preparation", "Timeliness", "Reliability"],
+        icon: "⚒️",
+        theme: "Character of work"
+    },
+    "Generosity & Giving": {
+        subcategories: ["Open Hand vs Tight Fist", "Generosity as Investment", "Firstfruits", "Helping the Poor", "Reciprocity"],
+        icon: "🤲",
+        theme: "The paradox of giving"
+    },
+    "Integrity & Business": {
+        subcategories: ["Honest Scales", "Ill-Gotten Gains", "False Witness", "Righteous vs Wicked Gain", "Bribes"],
+        icon: "⚖️",
+        theme: "How to gain matters"
+    },
+    "Provision & Need": {
+        subcategories: ["God as Provider", "Hunger and Satisfaction", "Daily Bread", "Abundance", "Famine"],
+        icon: "🍞",
+        theme: "Source of provision"
+    },
+    "Profit & Exchange": {
+        subcategories: ["Gain and Loss", "Haste vs Patience", "Get-Rich-Quick", "Sustainable Business"],
+        icon: "📈",
+        theme: "How wealth grows"
+    },
+    "Debt & Lending": {
+        subcategories: ["Co-Signing Dangers", "Surety", "Debt as Slavery", "Lending Practices"],
+        icon: "⚠️",
+        theme: "Bound by promise"
+    },
+    "Legacy & Inheritance": {
+        subcategories: ["Preparing Heirs", "Hastily Gained", "Multi-Generational", "Good Name vs Riches"],
+        icon: "🏛️",
+        theme: "Wealth beyond the grave"
+    },
+    "Greed & Consequences": {
+        subcategories: ["Covetousness", "Hastiness", "Entrapment", "Self-Destruction"],
+        icon: "💀",
+        theme: "What destroys wealth"
+    },
+    "General Financial Wisdom": {
+        subcategories: ["Wisdom > Wealth", "Character Foundation", "Divine vs Human Ways", "Path Discernment"],
+        icon: "🧠",
+        theme: "The big picture"
+    }
+};
+
+let allUnits = [];
+
+function loadData() {
+    fetch('proverbs-wisdom-units.json')
+        .then(r => r.json())
