@@ -31,11 +31,11 @@
 
 <header>
     <h1>Proverbs Wisdom - By Category</h1>
-    <p>238 Units Organized by Primary Category</p>
+    <p id="subtitle">Loading units...</p>
 </header>
 
-<div class="stats">
-    <strong>238 Total Units</strong> | 🔴 9 Expanded | 🟢 229 Standalone
+<div id="top-stats" class="stats">
+    <strong>Calculating stats...</strong>
 </div>
 
 <div id="categories-nav" class="category-nav"></div>
@@ -48,13 +48,28 @@ const unitsByCategory = {};
 fetch('https://raw.githubusercontent.com/iamdanielh/proverbs-financial-wisdom/main/proverbs-wisdom-units-FINAL.json')
     .then(r => r.json())
     .then(data => {
-        // Group by primary category
+        let expandedTotal = 0;
+        let standaloneTotal = 0;
+        const totalUnits = data.units.length;
+
+        // Group by primary category and tally stats
         data.units.forEach(u => {
             const cat = u.primary_category;
             if (!unitsByCategory[cat]) unitsByCategory[cat] = [];
             unitsByCategory[cat].push(u);
+
+            // Count expanded vs standalone dynamically
+            if (u.expanded_from && u.expanded_from.length) {
+                expandedTotal++;
+            } else {
+                standaloneTotal++;
+            }
         });
         
+        // Render dynamic header stats
+        document.getElementById('subtitle').innerText = `${totalUnits} Units Organized by Primary Category`;
+        document.getElementById('top-stats').innerHTML = `<strong>${totalUnits} Total Units</strong> | 🔴 ${expandedTotal} Expanded | 🟢 ${standaloneTotal} Standalone`;
+
         // Render navigation
         const nav = document.getElementById('categories-nav');
         Object.keys(unitsByCategory).sort().forEach(cat => {
