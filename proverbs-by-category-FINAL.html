@@ -22,9 +22,16 @@
         .unit-text { margin: 10px 0; padding: 10px; background: #f9f9f9; border-radius: 5px; }
         .primary-cat { background: #2c3e50; color: white; padding: 3px 10px; border-radius: 15px; font-size: 0.85em; }
         .stats { background: #ecf0f1; padding: 20px; border-radius: 10px; margin: 20px 0; }
+        
+        /* Navigation Styles */
         .category-nav { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0; }
-        .category-nav a { background: #2c3e50; color: white; padding: 8px 16px; border-radius: 20px; text-decoration: none; }
+        .category-nav a { background: #2c3e50; color: white; padding: 8px 16px; border-radius: 20px; text-decoration: none; cursor: pointer; transition: background 0.2s; }
         .category-nav a:hover { background: #c9a227; }
+        .category-nav a.active { background: #c9a227; font-weight: bold; } /* Active filter state */
+        
+        /* Section wrapper for filtering */
+        .category-section { display: block; animation: fadeIn 0.4s; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
     </style>
 </head>
 <body>
@@ -44,6 +51,28 @@
 
 <script>
 const unitsByCategory = {};
+
+// Global Filter Function
+window.filterCategory = function(safeId, event) {
+    event.preventDefault(); // Prevents page from jumping to top
+    
+    // Update active state on buttons
+    document.querySelectorAll('.category-nav a').forEach(a => a.classList.remove('active'));
+    event.target.classList.add('active');
+    
+    // Show/Hide sections
+    document.querySelectorAll('.category-section').forEach(section => {
+        if (safeId === 'all') {
+            section.style.display = 'block';
+        } else {
+            if (section.id === 'section-' + safeId) {
+                section.style.display = 'block';
+            } else {
+                section.style.display = 'none';
+            }
+        }
+    });
+};
 
 fetch('https://raw.githubusercontent.com/iamdanielh/proverbs-financial-wisdom/main/proverbs-wisdom-units-FINAL.json')
     .then(r => r.json())
@@ -72,21 +101,28 @@ fetch('https://raw.githubusercontent.com/iamdanielh/proverbs-financial-wisdom/ma
 
         // Render navigation
         const nav = document.getElementById('categories-nav');
+        nav.innerHTML += `<a href="#" class="active" onclick="filterCategory('all', event)">All Categories</a>`; // Added 'All' Button
+        
         Object.keys(unitsByCategory).sort().forEach(cat => {
             const count = unitsByCategory[cat].length;
-            nav.innerHTML += `<a href="#${cat.replace(/\s+/g, '-')}">${cat} (${count})</a>`;
+            const safeId = cat.replace(/\s+/g, '-');
+            nav.innerHTML += `<a href="#" onclick="filterCategory('${safeId}', event)">${cat} (${count})</a>`;
         });
         
         // Render content
         const content = document.getElementById('content');
         Object.entries(unitsByCategory).sort().forEach(([cat, units]) => {
+            const safeId = cat.replace(/\s+/g, '-');
             const expandedCount = units.filter(u => u.expanded_from && u.expanded_from.length).length;
-            content.innerHTML += `
-                <h2 id="${cat.replace(/\s+/g, '-')}">${cat} (${units.length} units${expandedCount ? `, ${expandedCount} expanded` : ''})</h2>
-            `;
+            
+            // Start a wrapper div for the entire category
+            let catHTML = `<div class="category-section" id="section-${safeId}">`;
+            
+            catHTML += `<h2 id="${safeId}">${cat} (${units.length} units${expandedCount ? `, ${expandedCount} expanded` : ''})</h2>`;
+            
             units.forEach(u => {
                 const isExpanded = u.expanded_from && u.expanded_from.length;
-                content.innerHTML += `
+                catHTML += `
                     <div class="unit ${isExpanded ? 'expanded' : 'standalone'}">
                         <div class="unit-header">
                             <span class="unit-ref">${u.reference} (${u.verse_count}v)</span>
@@ -97,10 +133,14 @@ fetch('https://raw.githubusercontent.com/iamdanielh/proverbs-financial-wisdom/ma
                     </div>
                 `;
             });
+            
+            // Close the wrapper div
+            catHTML += `</div>`;
+            content.innerHTML += catHTML;
         });
     })
     .catch(err => {
-        document.getElementById('content').innerHTML = '<p style="color:red">Error loading. Check console.</p>';
+        document.getElementById('content').innerHTML = '<p style="color:red">Error loading data. Check console.</p>';
         console.error(err);
     });
 </script>
