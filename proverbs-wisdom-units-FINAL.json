@@ -1,7 +1,7 @@
 {
-  "total_units": 238,
-  "total_verses": 313,
-  "note": "Fragments expanded into complete units, standalone preserved - exactly 243 verses",
+  "total_units": 206,
+  "total_verses": 255,
+  "note": "Cleaned dataset: Algorithmic keyword errors removed. Verses accurately categorized according to biblical financial context.",
   "units": [
     {
       "reference": "Proverbs 1:2-6",
@@ -129,21 +129,6 @@
       ]
     },
     {
-      "reference": "Proverbs 7:1-27",
-      "chapter": 7,
-      "verses": "1-27",
-      "verse_count": 27,
-      "text": "My son Keep my commandments and live! Guard my teaching as the apple of your eye. Bind them on your fingers. Write them on the tablet of your heart. Tell wisdom that they may keep you from the strange woman For at the window of my house I saw among the simple ones. I discerned among the youths a young man void of understanding passing through the street near her corner in the twilight Behold She is loud and defiant. Her feet don't stay in her house. Now she is in the streets So she caught him Sacrifices of peace offerings are with me. This day I have paid my vows. Therefore I came out to meet you I have spread my couch with carpets of tapestry I have perfumed my bed with myrrh Come For my husband isn't at home. He has gone on a long journey. He has taken a bag of money with him. He will come home at the full moon. With persuasive words He followed her immediately Until an arrow strikes through his liver Now therefore Don't let your heart turn to her ways. Don't go astray in her paths for she has thrown down many wounded. Yes Her house is the way to Sheol",
-      "primary_category": "Integrity & Business",
-      "secondary_categories": [],
-      "themes": [],
-      "expanded_from": [
-        "Proverbs 7:6",
-        "Proverbs 7:11",
-        "Proverbs 7:27"
-      ]
-    },
-    {
       "reference": "Proverbs 1:30",
       "chapter": 1,
       "verses": "30",
@@ -162,23 +147,10 @@
       "verses": "4",
       "verse_count": 1,
       "text": "If you seek her as silver",
-      "primary_category": "Wealth & Possessions",
+      "primary_category": "Wisdom Over Wealth",
       "secondary_categories": [],
       "themes": [
         "silver"
-      ],
-      "expanded_from": []
-    },
-    {
-      "reference": "Proverbs 2:6",
-      "chapter": 2,
-      "verses": "6",
-      "verse_count": 1,
-      "text": "For Yahweh gives wisdom. Out of his mouth comes knowledge and understanding.",
-      "primary_category": "Generosity & Giving",
-      "secondary_categories": [],
-      "themes": [
-        "give"
       ],
       "expanded_from": []
     },
@@ -209,38 +181,12 @@
       "expanded_from": []
     },
     {
-      "reference": "Proverbs 2:18",
-      "chapter": 2,
-      "verses": "18",
-      "verse_count": 1,
-      "text": "for her house leads down to death",
-      "primary_category": "General Financial Wisdom",
-      "secondary_categories": [],
-      "themes": [
-        "house"
-      ],
-      "expanded_from": []
-    },
-    {
-      "reference": "Proverbs 2:19",
-      "chapter": 2,
-      "verses": "19",
-      "verse_count": 1,
-      "text": "None who go to her return again",
-      "primary_category": "Profit & Exchange",
-      "secondary_categories": [],
-      "themes": [
-        "gain"
-      ],
-      "expanded_from": []
-    },
-    {
       "reference": "Proverbs 3:14",
       "chapter": 3,
       "verses": "14",
       "verse_count": 1,
       "text": "For her good profit is better than getting silver",
-      "primary_category": "Wealth & Possessions",
+      "primary_category": "Wisdom Over Wealth",
       "secondary_categories": [
         "Profit & Exchange"
       ],
@@ -256,7 +202,7 @@
       "verses": "16",
       "verse_count": 1,
       "text": "Length of days is in her right hand. In her left hand are riches and honor.",
-      "primary_category": "Wealth & Possessions",
+      "primary_category": "Wisdom Over Wealth",
       "secondary_categories": [],
       "themes": [
         "rich",
@@ -318,93 +264,15 @@
       "expanded_from": []
     },
     {
-      "reference": "Proverbs 5:3",
-      "chapter": 5,
-      "verses": "3",
-      "verse_count": 1,
-      "text": "For the lips of an adulteress drip honey. Her mouth is smoother than oil",
-      "primary_category": "Provision & Need",
-      "secondary_categories": [],
-      "themes": [
-        "oil"
-      ],
-      "expanded_from": []
-    },
-    {
-      "reference": "Proverbs 5:6",
-      "chapter": 5,
-      "verses": "6",
-      "verse_count": 1,
-      "text": "She gives no thought to the way of life. Her ways are crooked",
-      "primary_category": "Generosity & Giving",
-      "secondary_categories": [],
-      "themes": [
-        "give"
-      ],
-      "expanded_from": []
-    },
-    {
-      "reference": "Proverbs 5:8",
-      "chapter": 5,
-      "verses": "8",
-      "verse_count": 1,
-      "text": "Remove your way far from her. Don't come near the door of her house",
-      "primary_category": "General Financial Wisdom",
-      "secondary_categories": [],
-      "themes": [
-        "house"
-      ],
-      "expanded_from": []
-    },
-    {
-      "reference": "Proverbs 5:9",
-      "chapter": 5,
-      "verses": "9",
-      "verse_count": 1,
-      "text": "lest you give your honor to others",
-      "primary_category": "Generosity & Giving",
-      "secondary_categories": [],
-      "themes": [
-        "give"
-      ],
-      "expanded_from": []
-    },
-    {
       "reference": "Proverbs 5:10",
       "chapter": 5,
       "verses": "10",
       "verse_count": 1,
       "text": "lest strangers feast on your wealth",
-      "primary_category": "Wealth & Possessions",
+      "primary_category": "The Financial Cost of Vice",
       "secondary_categories": [],
       "themes": [
         "wealth"
-      ],
-      "expanded_from": []
-    },
-    {
-      "reference": "Proverbs 5:16",
-      "chapter": 5,
-      "verses": "16",
-      "verse_count": 1,
-      "text": "Should your springs overflow in the streets",
-      "primary_category": "General Financial Wisdom",
-      "secondary_categories": [],
-      "themes": [
-        "overflow"
-      ],
-      "expanded_from": []
-    },
-    {
-      "reference": "Proverbs 5:23",
-      "chapter": 5,
-      "verses": "23",
-      "verse_count": 1,
-      "text": "He will die for lack of instruction. In the greatness of his folly",
-      "primary_category": "General Financial Wisdom",
-      "secondary_categories": [],
-      "themes": [
-        "lack"
       ],
       "expanded_from": []
     },
@@ -440,37 +308,10 @@
       "verses": "26",
       "verse_count": 1,
       "text": "For a prostitute reduces you to a piece of bread. The adulteress hunts for your precious life.",
-      "primary_category": "Provision & Need",
+      "primary_category": "The Financial Cost of Vice",
       "secondary_categories": [],
       "themes": [
         "bread"
-      ],
-      "expanded_from": []
-    },
-    {
-      "reference": "Proverbs 7:19",
-      "chapter": 7,
-      "verses": "19",
-      "verse_count": 1,
-      "text": "For my husband isn't at home. He has gone on a long journey.",
-      "primary_category": "General Financial Wisdom",
-      "secondary_categories": [],
-      "themes": [
-        "home"
-      ],
-      "expanded_from": []
-    },
-    {
-      "reference": "Proverbs 7:20",
-      "chapter": 7,
-      "verses": "20",
-      "verse_count": 1,
-      "text": "He has taken a bag of money with him. He will come home at the full moon.",
-      "primary_category": "Wealth & Possessions",
-      "secondary_categories": [],
-      "themes": [
-        "money",
-        "home"
       ],
       "expanded_from": []
     },
@@ -480,7 +321,7 @@
       "verses": "10",
       "verse_count": 1,
       "text": "Receive my instruction rather than silver; knowledge rather than choice gold.",
-      "primary_category": "Wealth & Possessions",
+      "primary_category": "Wisdom Over Wealth",
       "secondary_categories": [],
       "themes": [
         "silver",
@@ -507,7 +348,7 @@
       "verses": "18",
       "verse_count": 1,
       "text": "With me are riches",
-      "primary_category": "Wealth & Possessions",
+      "primary_category": "Wisdom Over Wealth",
       "secondary_categories": [],
       "themes": [
         "rich",
@@ -521,7 +362,7 @@
       "verses": "19",
       "verse_count": 1,
       "text": "My fruit is better than gold",
-      "primary_category": "Wealth & Possessions",
+      "primary_category": "Wisdom Over Wealth",
       "secondary_categories": [],
       "themes": [
         "gold"
@@ -534,7 +375,7 @@
       "verses": "21",
       "verse_count": 1,
       "text": "That I may give wealth to those who love me. I fill their treasuries.",
-      "primary_category": "Wealth & Possessions",
+      "primary_category": "Wisdom Over Wealth",
       "secondary_categories": [
         "Generosity & Giving",
         "Provision & Need"
@@ -608,19 +449,6 @@
       "secondary_categories": [],
       "themes": [
         "increase"
-      ],
-      "expanded_from": []
-    },
-    {
-      "reference": "Proverbs 9:14",
-      "chapter": 9,
-      "verses": "14",
-      "verse_count": 1,
-      "text": "She sits at the door of her house",
-      "primary_category": "General Financial Wisdom",
-      "secondary_categories": [],
-      "themes": [
-        "house"
       ],
       "expanded_from": []
     },
@@ -715,19 +543,6 @@
       "expanded_from": []
     },
     {
-      "reference": "Proverbs 10:19",
-      "chapter": 10,
-      "verses": "19",
-      "verse_count": 1,
-      "text": "In the multitude of words there is no lack of disobedience",
-      "primary_category": "General Financial Wisdom",
-      "secondary_categories": [],
-      "themes": [
-        "lack"
-      ],
-      "expanded_from": []
-    },
-    {
       "reference": "Proverbs 10:20",
       "chapter": 10,
       "verses": "20",
@@ -808,19 +623,6 @@
       "secondary_categories": [],
       "themes": [
         "wage"
-      ],
-      "expanded_from": []
-    },
-    {
-      "reference": "Proverbs 11:22",
-      "chapter": 11,
-      "verses": "22",
-      "verse_count": 1,
-      "text": "Like a gold ring in a pig's snout",
-      "primary_category": "Wealth & Possessions",
-      "secondary_categories": [],
-      "themes": [
-        "gold"
       ],
       "expanded_from": []
     },
@@ -1011,19 +813,6 @@
       "expanded_from": []
     },
     {
-      "reference": "Proverbs 13:13",
-      "chapter": 13,
-      "verses": "13",
-      "verse_count": 1,
-      "text": "Whoever despises instruction will pay for it",
-      "primary_category": "Profit & Exchange",
-      "secondary_categories": [],
-      "themes": [
-        "pay"
-      ],
-      "expanded_from": []
-    },
-    {
       "reference": "Proverbs 13:18",
       "chapter": 13,
       "verses": "18",
@@ -1087,7 +876,7 @@
       "verses": "1",
       "verse_count": 1,
       "text": "Every wise woman builds her house",
-      "primary_category": "General Financial Wisdom",
+      "primary_category": "Legacy & Inheritance",
       "secondary_categories": [],
       "themes": [
         "house"
@@ -1113,7 +902,7 @@
       "verses": "11",
       "verse_count": 1,
       "text": "The house of the wicked will be overthrown",
-      "primary_category": "General Financial Wisdom",
+      "primary_category": "Legacy & Inheritance",
       "secondary_categories": [],
       "themes": [
         "house"
@@ -1235,7 +1024,7 @@
       "verses": "25",
       "verse_count": 1,
       "text": "Yahweh will uproot the house of the proud",
-      "primary_category": "General Financial Wisdom",
+      "primary_category": "Legacy & Inheritance",
       "secondary_categories": [],
       "themes": [
         "house"
@@ -1257,19 +1046,6 @@
         "greed",
         "greedy",
         "house"
-      ],
-      "expanded_from": []
-    },
-    {
-      "reference": "Proverbs 15:30",
-      "chapter": 15,
-      "verses": "30",
-      "verse_count": 1,
-      "text": "The light of the eyes rejoices the heart. Good news gives health to the bones.",
-      "primary_category": "Generosity & Giving",
-      "secondary_categories": [],
-      "themes": [
-        "give"
       ],
       "expanded_from": []
     },
@@ -1297,7 +1073,7 @@
       "verses": "16",
       "verse_count": 1,
       "text": "How much better it is to get wisdom than gold! Yes",
-      "primary_category": "Wealth & Possessions",
+      "primary_category": "Wisdom Over Wealth",
       "secondary_categories": [],
       "themes": [
         "gold"
@@ -1344,19 +1120,6 @@
       "expanded_from": []
     },
     {
-      "reference": "Proverbs 17:3",
-      "chapter": 17,
-      "verses": "3",
-      "verse_count": 1,
-      "text": "The refining pot is for silver",
-      "primary_category": "Wealth & Possessions",
-      "secondary_categories": [],
-      "themes": [
-        "silver"
-      ],
-      "expanded_from": []
-    },
-    {
       "reference": "Proverbs 17:4",
       "chapter": 17,
       "verses": "4",
@@ -1388,7 +1151,7 @@
       "verses": "8",
       "verse_count": 1,
       "text": "A bribe is a precious stone in the eyes of him who gives it; wherever he turns",
-      "primary_category": "Generosity & Giving",
+      "primary_category": "Integrity & Business",
       "secondary_categories": [],
       "themes": [
         "give"
@@ -1454,7 +1217,7 @@
       "verses": "18",
       "verse_count": 1,
       "text": "A man void of understanding strikes hands",
-      "primary_category": "General Financial Wisdom",
+      "primary_category": "Debt & Lending",
       "secondary_categories": [],
       "themes": [
         "hand"
@@ -1499,19 +1262,6 @@
       "themes": [
         "wealth",
         "rich"
-      ],
-      "expanded_from": []
-    },
-    {
-      "reference": "Proverbs 18:13",
-      "chapter": 18,
-      "verses": "13",
-      "verse_count": 1,
-      "text": "He who gives answer before he hears",
-      "primary_category": "Generosity & Giving",
-      "secondary_categories": [],
-      "themes": [
-        "give"
       ],
       "expanded_from": []
     },
@@ -1689,19 +1439,6 @@
       "expanded_from": []
     },
     {
-      "reference": "Proverbs 19:19",
-      "chapter": 19,
-      "verses": "19",
-      "verse_count": 1,
-      "text": "A hot-tempered man must pay the penalty",
-      "primary_category": "Profit & Exchange",
-      "secondary_categories": [],
-      "themes": [
-        "pay"
-      ],
-      "expanded_from": []
-    },
-    {
       "reference": "Proverbs 19:22",
       "chapter": 19,
       "verses": "22",
@@ -1750,7 +1487,7 @@
       "verses": "1",
       "verse_count": 1,
       "text": "Wine is a mocker",
-      "primary_category": "Provision & Need",
+      "primary_category": "The Financial Cost of Vice",
       "secondary_categories": [],
       "themes": [
         "wine"
@@ -1790,7 +1527,7 @@
       "verses": "15",
       "verse_count": 1,
       "text": "There is gold and abundance of rubies; but the lips of knowledge are a rare jewel.",
-      "primary_category": "Wealth & Possessions",
+      "primary_category": "Wisdom Over Wealth",
       "secondary_categories": [],
       "themes": [
         "gold",
@@ -1817,7 +1554,7 @@
       "verses": "17",
       "verse_count": 1,
       "text": "Fraudulent food is sweet to a man",
-      "primary_category": "Provision & Need",
+      "primary_category": "Integrity & Business",
       "secondary_categories": [],
       "themes": [
         "food"
@@ -1830,7 +1567,7 @@
       "verses": "18",
       "verse_count": 1,
       "text": "Plans are established by advice; by wise guidance you wage war!",
-      "primary_category": "Profit & Exchange",
+      "primary_category": "Strategy, Planning & Counsel",
       "secondary_categories": [],
       "themes": [
         "wage"
@@ -1864,19 +1601,6 @@
       "secondary_categories": [],
       "themes": [
         "weight"
-      ],
-      "expanded_from": []
-    },
-    {
-      "reference": "Proverbs 20:29",
-      "chapter": 20,
-      "verses": "29",
-      "verse_count": 1,
-      "text": "The glory of young men is their strength. The splendor of old men is their gray hair.",
-      "primary_category": "Debt & Lending",
-      "secondary_categories": [],
-      "themes": [
-        "lend"
       ],
       "expanded_from": []
     },
@@ -1938,25 +1662,12 @@
       "expanded_from": []
     },
     {
-      "reference": "Proverbs 21:9",
-      "chapter": 21,
-      "verses": "9",
-      "verse_count": 1,
-      "text": "It is better to dwell in the corner of the housetop",
-      "primary_category": "General Financial Wisdom",
-      "secondary_categories": [],
-      "themes": [
-        "house"
-      ],
-      "expanded_from": []
-    },
-    {
       "reference": "Proverbs 21:12",
       "chapter": 21,
       "verses": "12",
       "verse_count": 1,
       "text": "The Righteous One considers the house of the wicked",
-      "primary_category": "General Financial Wisdom",
+      "primary_category": "Legacy & Inheritance",
       "secondary_categories": [],
       "themes": [
         "house"
@@ -2036,19 +1747,6 @@
       "themes": [
         "treasure",
         "oil"
-      ],
-      "expanded_from": []
-    },
-    {
-      "reference": "Proverbs 21:22",
-      "chapter": 21,
-      "verses": "22",
-      "verse_count": 1,
-      "text": "A wise man scales the city of the mighty",
-      "primary_category": "Integrity & Business",
-      "secondary_categories": [],
-      "themes": [
-        "scale"
       ],
       "expanded_from": []
     },
@@ -2236,7 +1934,7 @@
       "verses": "26",
       "verse_count": 1,
       "text": "Don't you be one of those who strike hands",
-      "primary_category": "General Financial Wisdom",
+      "primary_category": "Debt & Lending",
       "secondary_categories": [],
       "themes": [
         "hand"
@@ -2325,19 +2023,6 @@
       "expanded_from": []
     },
     {
-      "reference": "Proverbs 23:13",
-      "chapter": 23,
-      "verses": "13",
-      "verse_count": 1,
-      "text": "Don't withhold correction from a child. If you punish him with the rod",
-      "primary_category": "Generosity & Giving",
-      "secondary_categories": [],
-      "themes": [
-        "withhold"
-      ],
-      "expanded_from": []
-    },
-    {
       "reference": "Proverbs 23:20",
       "chapter": 23,
       "verses": "20",
@@ -2369,7 +2054,7 @@
       "verses": "29",
       "verse_count": 1,
       "text": "Who has woe? Who has sorrow? Who has strife? Who has complaints? Who has needless bruises? Who has bloodshot eyes?",
-      "primary_category": "General Financial Wisdom",
+      "primary_category": "The Financial Cost of Vice",
       "secondary_categories": [],
       "themes": [
         "need"
@@ -2382,7 +2067,7 @@
       "verses": "30",
       "verse_count": 1,
       "text": "Those who stay long at the wine; those who go to seek out mixed wine.",
-      "primary_category": "Provision & Need",
+      "primary_category": "The Financial Cost of Vice",
       "secondary_categories": [],
       "themes": [
         "wine"
@@ -2395,7 +2080,7 @@
       "verses": "31",
       "verse_count": 1,
       "text": "Don't look at the wine when it is red",
-      "primary_category": "Provision & Need",
+      "primary_category": "The Financial Cost of Vice",
       "secondary_categories": [],
       "themes": [
         "wine"
@@ -2408,7 +2093,7 @@
       "verses": "3",
       "verse_count": 1,
       "text": "Through wisdom a house is built; by understanding it is established;",
-      "primary_category": "General Financial Wisdom",
+      "primary_category": "Legacy & Inheritance",
       "secondary_categories": [],
       "themes": [
         "house"
@@ -2450,7 +2135,7 @@
       "verses": "6",
       "verse_count": 1,
       "text": "for by wise guidance you wage your war; and victory is in many advisors.",
-      "primary_category": "Profit & Exchange",
+      "primary_category": "Strategy, Planning & Counsel",
       "secondary_categories": [],
       "themes": [
         "wage"
@@ -2520,19 +2205,6 @@
       "secondary_categories": [],
       "themes": [
         "poverty"
-      ],
-      "expanded_from": []
-    },
-    {
-      "reference": "Proverbs 25:4",
-      "chapter": 25,
-      "verses": "4",
-      "verse_count": 1,
-      "text": "Take away the dross from the silver",
-      "primary_category": "Wealth & Possessions",
-      "secondary_categories": [],
-      "themes": [
-        "silver"
       ],
       "expanded_from": []
     },
@@ -2608,45 +2280,6 @@
       "expanded_from": []
     },
     {
-      "reference": "Proverbs 25:24",
-      "chapter": 25,
-      "verses": "24",
-      "verse_count": 1,
-      "text": "It is better to dwell in the corner of the housetop",
-      "primary_category": "General Financial Wisdom",
-      "secondary_categories": [],
-      "themes": [
-        "house"
-      ],
-      "expanded_from": []
-    },
-    {
-      "reference": "Proverbs 26:6",
-      "chapter": 26,
-      "verses": "6",
-      "verse_count": 1,
-      "text": "One who sends a message by the hand of a fool is cutting off feet and drinking violence.",
-      "primary_category": "General Financial Wisdom",
-      "secondary_categories": [],
-      "themes": [
-        "hand"
-      ],
-      "expanded_from": []
-    },
-    {
-      "reference": "Proverbs 26:9",
-      "chapter": 26,
-      "verses": "9",
-      "verse_count": 1,
-      "text": "Like a thornbush that goes into the hand of a drunkard",
-      "primary_category": "General Financial Wisdom",
-      "secondary_categories": [],
-      "themes": [
-        "hand"
-      ],
-      "expanded_from": []
-    },
-    {
       "reference": "Proverbs 26:13",
       "chapter": 26,
       "verses": "13",
@@ -2688,19 +2321,6 @@
       "expanded_from": []
     },
     {
-      "reference": "Proverbs 26:20",
-      "chapter": 26,
-      "verses": "20",
-      "verse_count": 1,
-      "text": "For lack of wood a fire goes out. Without gossip",
-      "primary_category": "General Financial Wisdom",
-      "secondary_categories": [],
-      "themes": [
-        "lack"
-      ],
-      "expanded_from": []
-    },
-    {
       "reference": "Proverbs 26:23",
       "chapter": 26,
       "verses": "23",
@@ -2736,19 +2356,6 @@
       "secondary_categories": [],
       "themes": [
         "house"
-      ],
-      "expanded_from": []
-    },
-    {
-      "reference": "Proverbs 27:21",
-      "chapter": 27,
-      "verses": "21",
-      "verse_count": 1,
-      "text": "The crucible is for silver",
-      "primary_category": "Wealth & Possessions",
-      "secondary_categories": [],
-      "themes": [
-        "silver"
       ],
       "expanded_from": []
     },
@@ -3057,19 +2664,6 @@
       "expanded_from": []
     },
     {
-      "reference": "Proverbs 29:15",
-      "chapter": 29,
-      "verses": "15",
-      "verse_count": 1,
-      "text": "The rod of correction gives wisdom",
-      "primary_category": "Generosity & Giving",
-      "secondary_categories": [],
-      "themes": [
-        "give"
-      ],
-      "expanded_from": []
-    },
-    {
       "reference": "Proverbs 29:16",
       "chapter": 29,
       "verses": "16",
@@ -3122,7 +2716,7 @@
       "verses": "15",
       "verse_count": 1,
       "text": "The leach has two daughters: 'Give",
-      "primary_category": "Generosity & Giving",
+      "primary_category": "Greed & Consequences",
       "secondary_categories": [],
       "themes": [
         "give"
@@ -3153,32 +2747,6 @@
       "secondary_categories": [],
       "themes": [
         "hand"
-      ],
-      "expanded_from": []
-    },
-    {
-      "reference": "Proverbs 30:28",
-      "chapter": 30,
-      "verses": "28",
-      "verse_count": 1,
-      "text": "You can catch a lizard with your hands",
-      "primary_category": "General Financial Wisdom",
-      "secondary_categories": [],
-      "themes": [
-        "hand"
-      ],
-      "expanded_from": []
-    },
-    {
-      "reference": "Proverbs 31:3",
-      "chapter": 31,
-      "verses": "3",
-      "verse_count": 1,
-      "text": "Don't give your strength to women",
-      "primary_category": "Generosity & Giving",
-      "secondary_categories": [],
-      "themes": [
-        "give"
       ],
       "expanded_from": []
     },
