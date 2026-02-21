@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proverbs Financial Wisdom - Interactive Collection</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 30px 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 2.2rem;
+            background: linear-gradient(90deg, #ffd700, #ff6b6b, #4ecdc4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+        .subtitle { color: #888; font-size: 1rem; }
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        .stat {
+            text-align: center;
+            padding: 15px 30px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 10px;
+        }
+        .stat-number { font-size: 2rem; color: #ffd700; font-weight: bold; }
+        .stat-label { color: #888; font-size: 0.85rem; }
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            color: white;
+            font-weight: 600;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transition: transform 0.3s;
+        }
+        .btn:hover { transform: translateY(-2px); }
+        .btn.secondary { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+        select {
+            padding: 12px 24px;
+            border-radius: 25px;
+            border: 1px solid rgba(255,255,255,0.2);
+            background: rgba(0,0,0,0.3);
+            color: #fff;
+            font-size: 1rem;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .chapter { 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+        .verse { color: #888; font-size: 0.9rem; }
+        .title { 
+            color: #ffd700; 
+            font-size: 1.2rem; 
+            margin-bottom: 10px;
+        }
+        .scripture {
+            background: rgba(0,0,0,0.3);
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 3px solid #667eea;
+            font-style: italic;
+            color: #ddd;
+            margin: 15px 0;
+        }
+        .section { margin-top: 15px; }
+        .section-title {
+            color: #4ecdc4;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        .section-content { color: #bbb; }
+        .section-content li {
+            margin: 8px 0;
+            padding-left: 20px;
+            position: relative;
+            list-style: none;
+        }
+        .section-content li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+        }
+        .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px; }
+        .tag {
+            background: rgba(78, 205, 196, 0.2);
+            color: #4ecdc4;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+        }
+        .sources { display: flex; gap: 8px; margin-top: 15px; }
+        .source {
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            background: rgba(255,255,255,0.1);
+        }
+        .source.chatgpt { background: rgba(16, 163, 127, 0.3); color: #10a37f; }
+        .source.gemini { background: rgba(66, 133, 244, 0.3); color: #4285f4; }
+        .source.grok { background: rgba(239, 68, 68, 0.3); color: #ef4444; }
+        .hidden { display: none; }
+        @media print {
+            body { background: white; color: black; }
+            .controls { display: none; }
+            .card { border: 1px solid #ddd; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📖 Proverbs Financial Wisdom</h1>
+        <p class="subtitle">Complete Interactive Collection • Ancient Wisdom for Modern Wealth</p>
+    </div>
+
+    <div class="stats">
+        <div class="stat"><div class="stat-number" id="totalEntries">0</div><div class="stat-label">Wisdom Units</div></div>
+        <div class="stat"><div class="stat-number" id="totalCategories">0</div><div class="stat-label">Categories</div></div>
+        <div class="stat"><div class="stat-number" id="totalChapters">0</div><div class="stat-label">Chapters</div></div>
+    </div>
+
+    <div class="controls">
+        <select id="categoryFilter">
+            <option value="">All Categories</option>
+        </select>
+        <select id="chapterFilter">
+            <option value="">All Chapters</option>
+        </select>
+        <button class="btn" onclick="renderAll()">Show All</button>
+        <button class="btn secondary" onclick="exportData()">Export JSON</button>
+    </div>
+
+    <div class="content" id="content"></div>
+
+    <script>
+        // EMBEDDED DATA
+        const proverbsData = [
+  {
+    "chapter": 1,
+    "verses": "10-19",
+    "text": "My son, if sinners entice thee, consent thou not. If they say, Come with us, let us lay wait for blood...",
+    "normalized_buckets": ["Integrity & Ethical Wealth", "Risk Management & Prudence"],
+    "suggested_chapter": "The Foundation of True Riches: Building Wealth with Honor",
+    "principles": ["Pursuing wealth through dishonest or violent schemes ultimately destroys the participants.", "\"Get-rich-quick\" schemes and predatory wealth accumulation inherently carry catastrophic risk and ultimately destroy the investor."],
+    "modern_applications": ["Avoid get-rich-quick schemes, fraud, insider trading, or illegal ventures.", "Avoid high-risk, opaque, or predatory financial vehicles (Ponzi schemes, meme stocks, unregulated crypto platforms)."],
+    "sources": ["chatgpt", "gemini", "grok"]
+  },
+  {
+    "chapter": 2,
+    "verses": "1-11",
+    "text": "My son, if thou wilt receive my words, and hide my commandments with thee...",
+    "normalized_buckets": ["Wisdom, Knowledge & Human Capital"],
+    "suggested_chapter": "Invest in Yourself: Wisdom as Your Greatest Asset",
+    "principles": ["Diligently pursuing knowledge and wisdom yields long-term protection and prosperity."],
+    "modern_applications": ["Invest in education, financial literacy, and skill-building."],
+    "sources": ["chatgpt"]
+  },
+  {
+    "chapter": 3,
+    "verses": "9-10",
+    "text": "Honor the Lord with your wealth and with the firstfruits of all your produce...",
+    "normalized_buckets": ["Generosity, Giving & Social Responsibility"],
+    "suggested_chapter": "The Blessing of Giving: Wealth That Multiplies",
+    "principles": ["Prioritizing generosity and stewardship leads to provision and abundance."],
+    "modern_applications": ["Allocate a portion of income to giving or charitable causes first."],
+    "sources": ["chatgpt", "gemini", "grok"]
+  }
+];
+        
+        // LOAD FULL DATA IF AVAILABLE
+        fetch('proverbs_data.json')
+            .then(r => r.json())
+            .then(d => { proverbsData = d; initialize(); })
+            .catch(() => initialize());
+
+        let allCategories = new Set();
+        let allChapters = new Set();
+
+        function initialize() {
+            // Collect categories and chapters
+            proverbsData.forEach(entry => {
+                entry.normalized_buckets?.forEach(b => allCategories.add(b));
+                allChapters.add(entry.chapter);
+            });
+            
+            // Update stats
+            document.getElementById('totalEntries').textContent = proverbsData.length;
+            document.getElementById('totalCategories').textContent = allCategories.size;
+            document.getElementById('totalChapters').textContent = allChapters.size;
+            
+            // Populate filters
+            const catSelect = document.getElementById('categoryFilter');
+            Array.from(allCategories).sort().forEach(cat => {
+                const opt = document.createElement('option');
+                opt.value = cat;
+                opt.textContent = cat;
+                catSelect.appendChild(opt);
+            });
+            
+            const chapSelect = document.getElementById('chapterFilter');
+            Array.from(allChapters).sort((a,b) => a-b).forEach(chap => {
+                const opt = document.createElement('option');
+                opt.value = chap;
+                opt.textContent = 'Chapter ' + chap;
+                chapSelect.appendChild(opt);
+            });
+            
+            renderAll();
+        }
+
+        function renderCard(entry) {
+            const principles = entry.principles?.map(p => `<li>${p}</li>`).join('') || '';
+            const applications = entry.modern_applications?.map(a => `<li>${a}</li>`).join('') || '';
+            const tags = entry.normalized_buckets?.map(t => `<span class="tag">${t}</span>`).join('') || '';
+            const sources = entry.sources?.map(s => `<span class="source ${s}">${s}</span>`).join('') || '';
+            
+            return `
+                <div class="card" data-chapter="${entry.chapter}" data-buckets="${entry.normalized_buckets?.join(',') || ''}">
+                    <div class="card-header">
+                        <span class="chapter">Chapter ${entry.chapter}</span>
+                        <span class="verse">${entry.verses}</span>
+                    </div>
+                    <div class="title">${entry.suggested_chapter}</div>
+                    <div class="scripture">"${entry.text}"</div>
+                    ${principles ? `<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content">${principles}</ul></div>` : ''}
+                    ${applications ? `<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content">${applications}</ul></div>` : ''}
+                    <div class="tags">${tags}</div>
+                    <div class="sources">${sources}</div>
+                </div>
+            `;
+        }
+
+        function renderAll() {
+            document.getElementById('content').innerHTML = proverbsData.map(renderCard).join('');
+        }
+
+        function filterCards() {
+            const cat = document.getElementById('categoryFilter').value;
+            const chap = document.getElementById('chapterFilter').value;
+            
+            const filtered = proverbsData.filter(e => {
+                if (cat && !e.normalized_buckets?.includes(cat)) return false;
+                if (chap && e.chapter != chap) return false;
+                return true;
+            });
+            
+            document.getElementById('content').innerHTML = filtered.map(renderCard).join('');
+        }
+
+        document.getElementById('categoryFilter').addEventListener('change', filterCards);
+        document.getElementById('chapterFilter').addEventListener('change', filterCards);
+
+        function exportData() {
+            const blob = new Blob([JSON.stringify(proverbsData, null, 2)], {type: 'application/json'});
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'proverbs_financial_wisdom.json';
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+    </script>
+</body>
+</html>

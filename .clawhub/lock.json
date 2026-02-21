@@ -12,6 +12,10 @@
     "github": {
       "version": "1.0.0",
       "installedAt": 1771638693072
+    },
+    "agentmail": {
+      "version": "1.1.1",
+      "installedAt": 1771648272676
     }
   }
 }
