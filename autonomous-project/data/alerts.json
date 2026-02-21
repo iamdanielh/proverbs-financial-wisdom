@@ -1,0 +1,13 @@
+[
+  {
+    "coin": "polkadot",
+    "time": "2026-02-19T03:48:50.519752",
+    "price": 1.29,
+    "change_24h": -5.010488790229069,
+    "volume_24h": 94105820.3372563,
+    "volume_spike": false,
+    "vol_ratio": 0,
+    "price_anomaly": true,
+    "direction": "DUMP"
+  }
+]

@@ -1,0 +1,108 @@
+[
+  {
+    "timestamp": "2026-02-19T04:09:39.856918",
+    "deals_found": 4,
+    "deals": [
+      {
+        "title": "ThinkPad X1 Carbon Gen 11",
+        "price": 650,
+        "original": 1800,
+        "condition": "good",
+        "source": "demo_ebay",
+        "fetched_at": "2026-02-19T04:09:39.856535",
+        "marketplace": "DemoMarket",
+        "category": "laptops",
+        "analysis": {
+          "purchase_price": 650,
+          "estimated_fmv": 1260.0,
+          "resale_price": 1134.0,
+          "platform_fees": 56.7,
+          "shipping": 15.0,
+          "net_proceeds": 1062.3,
+          "gross_profit": 412.3,
+          "roi_percent": 63.4,
+          "margin_percent": 36.4,
+          "platform": "facebook",
+          "is_viable": true
+        },
+        "resale_platform": "facebook",
+        "score": 3.7405
+      },
+      {
+        "title": "Dell XPS 15 i7 32GB RAM RTX 4060",
+        "price": 850,
+        "original": 1899,
+        "condition": "good",
+        "source": "demo_cg",
+        "fetched_at": "2026-02-19T04:09:39.856532",
+        "marketplace": "DemoMarket",
+        "category": "laptops",
+        "analysis": {
+          "purchase_price": 850,
+          "estimated_fmv": 1329.3,
+          "resale_price": 1196.37,
+          "platform_fees": 59.82,
+          "shipping": 15.0,
+          "net_proceeds": 1121.55,
+          "gross_profit": 271.55,
+          "roi_percent": 31.9,
+          "margin_percent": 22.7,
+          "platform": "facebook",
+          "is_viable": true
+        },
+        "resale_platform": "facebook",
+        "score": 2.29025
+      },
+      {
+        "title": "Samsung Galaxy S24 Ultra 512GB",
+        "price": 680,
+        "original": 1419,
+        "condition": "good",
+        "source": "demo_fbm",
+        "fetched_at": "2026-02-19T04:09:39.856547",
+        "marketplace": "DemoMarket",
+        "category": "electronics",
+        "analysis": {
+          "purchase_price": 680,
+          "estimated_fmv": 993.3,
+          "resale_price": 893.97,
+          "platform_fees": 44.7,
+          "shipping": 15.0,
+          "net_proceeds": 834.27,
+          "gross_profit": 154.27,
+          "roi_percent": 22.7,
+          "margin_percent": 17.3,
+          "platform": "facebook",
+          "is_viable": true
+        },
+        "resale_platform": "facebook",
+        "score": 1.45785
+      },
+      {
+        "title": "iPad Pro 12.9 M2 256GB",
+        "price": 720,
+        "original": 1199,
+        "condition": "like_new",
+        "source": "demo_cg",
+        "fetched_at": "2026-02-19T04:09:39.856548",
+        "marketplace": "DemoMarket",
+        "category": "electronics",
+        "analysis": {
+          "purchase_price": 720,
+          "estimated_fmv": 1019.15,
+          "resale_price": 917.24,
+          "platform_fees": 45.86,
+          "shipping": 15.0,
+          "net_proceeds": 856.37,
+          "gross_profit": 136.37,
+          "roi_percent": 18.9,
+          "margin_percent": 14.9,
+          "platform": "facebook",
+          "is_viable": true
+        },
+        "resale_platform": "facebook",
+        "score": 1.26335
+      }
+    ]
+  }
+]

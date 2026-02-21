@@ -1,0 +1,1785 @@
+{
+  "total_units": 98,
+  "single_verse": 46,
+  "multi_verse": 52,
+  "units": [
+    {
+      "reference": "Proverbs 1:4",
+      "chapter": 1,
+      "verses": "4",
+      "verse_count": 1,
+      "text": "to give prudence to the simple",
+      "primary_category": "Generosity & Giving",
+      "secondary_categories": [],
+      "themes": [
+        "wealth",
+        "fill",
+        "house",
+        "oil"
+      ],
+      "original_refs": [
+        "Proverbs 1:4"
+      ]
+    },
+    {
+      "reference": "Proverbs 1:13",
+      "chapter": 1,
+      "verses": "13",
+      "verse_count": 1,
+      "text": "We'll find all valuable wealth. We'll fill our houses with spoil.",
+      "primary_category": "Provision & Need",
+      "secondary_categories": [
+        "Wealth & Possessions"
+      ],
+      "themes": [
+        "gain",
+        "greed",
+        "greedy"
+      ],
+      "original_refs": [
+        "Proverbs 1:13"
+      ]
+    },
+    {
+      "reference": "Proverbs 1:19",
+      "chapter": 1,
+      "verses": "19",
+      "verse_count": 1,
+      "text": "So are the ways of everyone who is greedy for gain. It takes away the life of its owners.",
+      "primary_category": "Greed & Consequences",
+      "secondary_categories": [
+        "Profit & Exchange"
+      ],
+      "themes": [
+        "want"
+      ],
+      "original_refs": [
+        "Proverbs 1:19"
+      ]
+    },
+    {
+      "reference": "Proverbs 1:30",
+      "chapter": 1,
+      "verses": "30",
+      "verse_count": 1,
+      "text": "They wanted none of my counsel. They despised all my reproof.",
+      "primary_category": "Provision & Need",
+      "secondary_categories": [],
+      "themes": [
+        "want"
+      ],
+      "original_refs": [
+        "Proverbs 1:30"
+      ]
+    },
+    {
+      "reference": "Proverbs 2:4-9",
+      "chapter": 2,
+      "verses": "4-9",
+      "verse_count": 4,
+      "text": "If you seek her as silver For Yahweh gives wisdom. Out of his mouth comes knowledge and understanding. that he may guard the paths of justice Then you will understand righteousness and justice",
+      "primary_category": "General Financial Wisdom",
+      "secondary_categories": [
+        "Wisdom & Understanding"
+      ],
+      "themes": [
+        "house"
+      ],
+      "original_refs": [
+        "Proverbs 2:4",
+        "Proverbs 2:6",
+        "Proverbs 2:8",
+        "Proverbs 2:9"
+      ]
+    },
+    {
+      "reference": "Proverbs 2:18-19",
+      "chapter": 2,
+      "verses": "18-19",
+      "verse_count": 2,
+      "text": "for her house leads down to death None who go to her return again",
+      "primary_category": "Profit & Exchange",
+      "secondary_categories": [],
+      "themes": [
+        "house"
+      ],
+      "original_refs": [
+        "Proverbs 2:18",
+        "Proverbs 2:19"
+      ]
+    },
+    {
+      "reference": "Proverbs 3:10",
+      "chapter": 3,
+      "verses": "10",
+      "verse_count": 1,
+      "text": "so your barns will be filled with plenty",
+      "primary_category": "Provision & Need",
+      "secondary_categories": [
+        "Wealth & Possessions"
+      ],
+      "themes": [
+        "silver",
+        "profit"
+      ],
+      "original_refs": [
+        "Proverbs 3:10"
+      ]
+    },
+    {
+      "reference": "Proverbs 3:14-16",
+      "chapter": 3,
+      "verses": "14-16",
+      "verse_count": 2,
+      "text": "For her good profit is better than getting silver Length of days is in her right hand. In her left hand are riches and honor.",
+      "primary_category": "Wealth & Possessions",
+      "secondary_categories": [
+        "Profit & Exchange"
+      ],
+      "themes": [
+        "withhold"
+      ],
+      "original_refs": [
+        "Proverbs 3:14",
+        "Proverbs 3:16"
+      ]
+    },
+    {
+      "reference": "Proverbs 3:27-29",
+      "chapter": 3,
+      "verses": "27-29",
+      "verse_count": 2,
+      "text": "Don't withhold good from those to whom it is due Don't devise evil against your neighbor",
+      "primary_category": "Generosity & Giving",
+      "secondary_categories": [
+        "Profit & Exchange"
+      ],
+      "themes": [
+        "house"
+      ],
+      "original_refs": [
+        "Proverbs 3:27",
+        "Proverbs 3:29"
+      ]
+    },
+    {
+      "reference": "Proverbs 3:33-35",
+      "chapter": 3,
+      "verses": "33-35",
+      "verse_count": 2,
+      "text": "Yahweh's curse is in the house of the wicked The wise will inherit glory",
+      "primary_category": "Integrity & Business",
+      "secondary_categories": [
+        "Legacy & Inheritance"
+      ],
+      "themes": [
+        "house"
+      ],
+      "original_refs": [
+        "Proverbs 3:33",
+        "Proverbs 3:35"
+      ]
+    },
+    {
+      "reference": "Proverbs 4:2",
+      "chapter": 4,
+      "verses": "2",
+      "verse_count": 1,
+      "text": "for I give you sound learning. Don't forsake my law.",
+      "primary_category": "General Financial Wisdom",
+      "secondary_categories": [
+        "Wisdom & Understanding"
+      ],
+      "themes": [
+        "lend",
+        "give"
+      ],
+      "original_refs": [
+        "Proverbs 4:2"
+      ]
+    },
+    {
+      "reference": "Proverbs 4:9",
+      "chapter": 4,
+      "verses": "9",
+      "verse_count": 1,
+      "text": "She will give to your head a garland of grace. She will deliver a crown of splendor to you.",
+      "primary_category": "Generosity & Giving",
+      "secondary_categories": [
+        "Debt & Lending"
+      ],
+      "themes": [
+        "bread"
+      ],
+      "original_refs": [
+        "Proverbs 4:9"
+      ]
+    },
+    {
+      "reference": "Proverbs 4:17",
+      "chapter": 4,
+      "verses": "17",
+      "verse_count": 1,
+      "text": "For they eat the bread of wickedness",
+      "primary_category": "Integrity & Business",
+      "secondary_categories": [
+        "Provision & Need"
+      ],
+      "themes": [
+        "diligence"
+      ],
+      "original_refs": [
+        "Proverbs 4:17"
+      ]
+    },
+    {
+      "reference": "Proverbs 4:23",
+      "chapter": 4,
+      "verses": "23",
+      "verse_count": 1,
+      "text": "Keep your heart with all diligence",
+      "primary_category": "Diligence & Work",
+      "secondary_categories": [],
+      "themes": [
+        "hand"
+      ],
+      "original_refs": [
+        "Proverbs 4:23"
+      ]
+    },
+    {
+      "reference": "Proverbs 4:27",
+      "chapter": 4,
+      "verses": "27",
+      "verse_count": 1,
+      "text": "Don't turn to the right hand nor to the left. Remove your foot from evil.",
+      "primary_category": "General Financial Wisdom",
+      "secondary_categories": [],
+      "themes": [
+        "hand"
+      ],
+      "original_refs": [
+        "Proverbs 4:27"
+      ]
+    },
+    {
+      "reference": "Proverbs 5:3-10",
+      "chapter": 5,
+      "verses": "3-10",
+      "verse_count": 5,
+      "text": "For the lips of an adulteress drip honey. Her mouth is smoother than oil She gives no thought to the way of life. Her ways are crooked Remove your way far from her. Don't come near the door of her house lest you give your honor to others lest strangers feast on your wealth",
+      "primary_category": "Integrity & Business",
+      "secondary_categories": [
+        "General Financial Wisdom"
+      ],
+      "themes": [
+        "overflow"
+      ],
+      "original_refs": [
+        "Proverbs 5:3",
+        "Proverbs 5:6",
+        "Proverbs 5:8",
+        "Proverbs 5:9",
+        "Proverbs 5:10"
+      ]
+    },
+    {
+      "reference": "Proverbs 5:16",
+      "chapter": 5,
+      "verses": "16",
+      "verse_count": 1,
+      "text": "Should your springs overflow in the streets",
+      "primary_category": "General Financial Wisdom",
+      "secondary_categories": [],
+      "themes": [
+        "lack"
+      ],
+      "original_refs": [
+        "Proverbs 5:16"
+      ]
+    },
+    {
+      "reference": "Proverbs 5:23",
+      "chapter": 5,
+      "verses": "23",
+      "verse_count": 1,
+      "text": "He will die for lack of instruction. In the greatness of his folly",
+      "primary_category": "General Financial Wisdom",
+      "secondary_categories": [],
+      "themes": [
+        "lack"
+      ],
+      "original_refs": [
+        "Proverbs 5:23"
+      ]
+    },
+    {
+      "reference": "Proverbs 6:4",
+      "chapter": 6,
+      "verses": "4",
+      "verse_count": 1,
+      "text": "Give no sleep to your eyes",
+      "primary_category": "Diligence & Work",
+      "secondary_categories": [
+        "Generosity & Giving"
+      ],
+      "themes": [
+        "bread"
+      ],
+      "original_refs": [
+        "Proverbs 6:4"
+      ]
+    },
+    {
+      "reference": "Proverbs 6:8-11",
+      "chapter": 6,
+      "verses": "8-11",
+      "verse_count": 2,
+      "text": "provides her bread in the summer so your poverty will come as a robber",
+      "primary_category": "Wealth & Possessions",
+      "secondary_categories": [
+        "Provision & Need"
+      ],
+      "themes": [
+        "false"
+      ],
+      "original_refs": [
+        "Proverbs 6:8",
+        "Proverbs 6:11"
+      ]
+    },
+    {
+      "reference": "Proverbs 6:19",
+      "chapter": 6,
+      "verses": "19",
+      "verse_count": 1,
+      "text": "a false witness who utters lies",
+      "primary_category": "Integrity & Business",
+      "secondary_categories": [],
+      "themes": [
+        "bread"
+      ],
+      "original_refs": [
+        "Proverbs 6:19"
+      ]
+    },
+    {
+      "reference": "Proverbs 6:26",
+      "chapter": 6,
+      "verses": "26",
+      "verse_count": 1,
+      "text": "For a prostitute reduces you to a piece of bread. The adulteress hunts for your precious life.",
+      "primary_category": "Provision & Need",
+      "secondary_categories": [],
+      "themes": [
+        "bread"
+      ],
+      "original_refs": [
+        "Proverbs 6:26"
+      ]
+    },
+    {
+      "reference": "Proverbs 7:6",
+      "chapter": 7,
+      "verses": "6",
+      "verse_count": 1,
+      "text": "For at the window of my house",
+      "primary_category": "General Financial Wisdom",
+      "secondary_categories": [],
+      "themes": [
+        "house"
+      ],
+      "original_refs": [
+        "Proverbs 7:6"
+      ]
+    },
+    {
+      "reference": "Proverbs 7:11",
+      "chapter": 7,
+      "verses": "11",
+      "verse_count": 1,
+      "text": "She is loud and defiant. Her feet don't stay in her house.",
+      "primary_category": "General Financial Wisdom",
+      "secondary_categories": [],
+      "themes": [
+        "home"
+      ],
+      "original_refs": [
+        "Proverbs 7:11"
+      ]
+    },
+    {
+      "reference": "Proverbs 7:19-20",
+      "chapter": 7,
+      "verses": "19-20",
+      "verse_count": 2,
+      "text": "For my husband isn't at home. He has gone on a long journey. He has taken a bag of money with him. He will come home at the full moon.",
+      "primary_category": "General Financial Wisdom",
+      "secondary_categories": [],
+      "themes": [
+        "house"
+      ],
+      "original_refs": [
+        "Proverbs 7:19",
+        "Proverbs 7:20"
+      ]
+    },
+    {
+      "reference": "Proverbs 7:27",
+      "chapter": 7,
+      "verses": "27",
+      "verse_count": 1,
+      "text": "Her house is the way to Sheol",
+      "primary_category": "General Financial Wisdom",
+      "secondary_categories": [],
+      "themes": [
+        "house"
+      ],
+      "original_refs": [
+        "Proverbs 7:27"
+      ]
+    },
+    {
+      "reference": "Proverbs 8:10",
+      "chapter": 8,
+      "verses": "10",
+      "verse_count": 1,
+      "text": "Receive my instruction rather than silver; knowledge rather than choice gold.",
+      "primary_category": "Wealth & Possessions",
+      "secondary_categories": [],
+      "themes": [
+        "diligent"
+      ],
+      "original_refs": [
+        "Proverbs 8:10"
+      ]
+    },
+    {
+      "reference": "Proverbs 8:17-22",
+      "chapter": 8,
+      "verses": "17-22",
+      "verse_count": 5,
+      "text": "I love those who love me. Those who seek me diligently will find me. With me are riches My fruit is better than gold That I may give wealth to those who love me. I fill their treasuries. Yahweh possessed me in the beginning of his work",
+      "primary_category": "Wealth & Possessions",
+      "secondary_categories": [
+        "Diligence & Work",
+        "Generosity & Giving"
+      ],
+      "themes": [
+        "gain"
+      ],
+      "original_refs": [
+        "Proverbs 8:17",
+        "Proverbs 8:18",
+        "Proverbs 8:19",
+        "Proverbs 8:21",
+        "Proverbs 8:22"
+      ]
+    },
+    {
+      "reference": "Proverbs 8:36",
+      "chapter": 8,
+      "verses": "36",
+      "verse_count": 1,
+      "text": "But he who sins against me wrongs his own soul. All those who hate me love death.",
+      "primary_category": "Profit & Exchange",
+      "secondary_categories": [],
+      "themes": [
+        "gain"
+      ],
+      "original_refs": [
+        "Proverbs 8:36"
+      ]
+    },
+    {
+      "reference": "Proverbs 9:1-2",
+      "chapter": 9,
+      "verses": "1-2",
+      "verse_count": 2,
+      "text": "Wisdom has built her house. She has carved out her seven pillars. She has prepared her meat. She has mixed her wine. She has also set her table.",
+      "primary_category": "Provision & Need",
+      "secondary_categories": [],
+      "themes": [
+        "increase"
+      ],
+      "original_refs": [
+        "Proverbs 9:1",
+        "Proverbs 9:2"
+      ]
+    },
+    {
+      "reference": "Proverbs 9:11-17",
+      "chapter": 9,
+      "verses": "11-17",
+      "verse_count": 3,
+      "text": "For by me your days will be multiplied. The years of your life will be increased. She sits at the door of her house Stolen water is sweet. Food eaten in secret is pleasant.",
+      "primary_category": "Generosity & Giving",
+      "secondary_categories": [
+        "Provision & Need",
+        "Profit & Exchange"
+      ],
+      "themes": [
+        "increase"
+      ],
+      "original_refs": [
+        "Proverbs 9:11",
+        "Proverbs 9:14",
+        "Proverbs 9:17"
+      ]
+    },
+    {
+      "reference": "Proverbs 10:2-6",
+      "chapter": 10,
+      "verses": "2-6",
+      "verse_count": 3,
+      "text": "Treasures of wickedness profit nothing He becomes poor who works with a lazy hand Blessings are on the head of the righteous",
+      "primary_category": "Wealth & Possessions",
+      "secondary_categories": [
+        "Diligence & Work",
+        "Generosity & Giving"
+      ],
+      "themes": [
+        "wealth",
+        "rich",
+        "poor",
+        "poverty"
+      ],
+      "original_refs": [
+        "Proverbs 10:2",
+        "Proverbs 10:4",
+        "Proverbs 10:6"
+      ]
+    },
+    {
+      "reference": "Proverbs 10:15-22",
+      "chapter": 10,
+      "verses": "15-22",
+      "verse_count": 5,
+      "text": "The rich man's wealth is his strong city. The destruction of the poor is their poverty. The labor of the righteous leads to life. The increase of the wicked leads to sin. In the multitude of words there is no lack of disobedience The tongue of the righteous is like choice silver. The heart of the wicked is of little worth. Yahweh's blessing brings wealth",
+      "primary_category": "Wealth & Possessions",
+      "secondary_categories": [
+        "Diligence & Work",
+        "Generosity & Giving"
+      ],
+      "themes": [
+        "wealth",
+        "rich",
+        "poor",
+        "poverty"
+      ],
+      "original_refs": [
+        "Proverbs 10:15",
+        "Proverbs 10:16",
+        "Proverbs 10:19",
+        "Proverbs 10:20",
+        "Proverbs 10:22"
+      ]
+    },
+    {
+      "reference": "Proverbs 11:1-4",
+      "chapter": 11,
+      "verses": "1-4",
+      "verse_count": 2,
+      "text": "A false balance is an abomination to Yahweh Riches don't profit in the day of wrath",
+      "primary_category": "Wealth & Possessions",
+      "secondary_categories": [
+        "Integrity & Business",
+        "Profit & Exchange"
+      ],
+      "themes": [
+        "blessing"
+      ],
+      "original_refs": [
+        "Proverbs 11:1",
+        "Proverbs 11:4"
+      ]
+    },
+    {
+      "reference": "Proverbs 11:11",
+      "chapter": 11,
+      "verses": "11",
+      "verse_count": 1,
+      "text": "By the blessing of the upright",
+      "primary_category": "Generosity & Giving",
+      "secondary_categories": [],
+      "themes": [
+        "wage"
+      ],
+      "original_refs": [
+        "Proverbs 11:11"
+      ]
+    },
+    {
+      "reference": "Proverbs 11:18",
+      "chapter": 11,
+      "verses": "18",
+      "verse_count": 1,
+      "text": "Wicked people earn deceitful wages",
+      "primary_category": "Integrity & Business",
+      "secondary_categories": [
+        "Profit & Exchange"
+      ],
+      "themes": [
+        "gold"
+      ],
+      "original_refs": [
+        "Proverbs 11:18"
+      ]
+    },
+    {
+      "reference": "Proverbs 11:22",
+      "chapter": 11,
+      "verses": "22",
+      "verse_count": 1,
+      "text": "Like a gold ring in a pig's snout",
+      "primary_category": "Wealth & Possessions",
+      "secondary_categories": [],
+      "themes": [
+        "withhold",
+        "grain"
+      ],
+      "original_refs": [
+        "Proverbs 11:22"
+      ]
+    },
+    {
+      "reference": "Proverbs 11:26-29",
+      "chapter": 11,
+      "verses": "26-29",
+      "verse_count": 4,
+      "text": "People curse someone who withholds grain He who diligently seeks good seeks favor He who trusts in his riches will fall He who troubles his own house shall inherit the wind. The foolish shall be servant to the wise of heart.",
+      "primary_category": "Wealth & Possessions",
+      "secondary_categories": [
+        "Diligence & Work",
+        "Generosity & Giving"
+      ],
+      "themes": [
+        "withhold",
+        "grain"
+      ],
+      "original_refs": [
+        "Proverbs 11:26",
+        "Proverbs 11:27",
+        "Proverbs 11:28",
+        "Proverbs 11:29"
+      ]
+    },
+    {
+      "reference": "Proverbs 12:5",
+      "chapter": 12,
+      "verses": "5",
+      "verse_count": 1,
+      "text": "The thoughts of the righteous are just",
+      "primary_category": "Integrity & Business",
+      "secondary_categories": [],
+      "themes": [
+        "bread",
+        "plenty"
+      ],
+      "original_refs": [
+        "Proverbs 12:5"
+      ]
+    },
+    {
+      "reference": "Proverbs 12:11-14",
+      "chapter": 12,
+      "verses": "11-14",
+      "verse_count": 2,
+      "text": "He who tills his land shall have plenty of bread A man shall be satisfied with good by the fruit of his mouth. The work of a man's hands shall be rewarded to him.",
+      "primary_category": "Provision & Need",
+      "secondary_categories": [
+        "Diligence & Work"
+      ],
+      "themes": [
+        "diligent",
+        "hand"
+      ],
+      "original_refs": [
+        "Proverbs 12:11",
+        "Proverbs 12:14"
+      ]
+    },
+    {
+      "reference": "Proverbs 12:24-27",
+      "chapter": 12,
+      "verses": "24-27",
+      "verse_count": 2,
+      "text": "The hands of the diligent ones shall rule The slothful man doesn't roast his game",
+      "primary_category": "Diligence & Work",
+      "secondary_categories": [],
+      "themes": [
+        "diligent",
+        "hand"
+      ],
+      "original_refs": [
+        "Proverbs 12:24",
+        "Proverbs 12:27"
+      ]
+    },
+    {
+      "reference": "Proverbs 13:4-13",
+      "chapter": 13,
+      "verses": "4-13",
+      "verse_count": 5,
+      "text": "The soul of the sluggard desires There are some who pretend to be rich The ransom of a man's life is his riches Wealth gained dishonestly dwindles away Whoever despises instruction will pay for it",
+      "primary_category": "Wealth & Possessions",
+      "secondary_categories": [
+        "Diligence & Work",
+        "Integrity & Business"
+      ],
+      "themes": [
+        "poverty"
+      ],
+      "original_refs": [
+        "Proverbs 13:4",
+        "Proverbs 13:7",
+        "Proverbs 13:8",
+        "Proverbs 13:11",
+        "Proverbs 13:13"
+      ]
+    },
+    {
+      "reference": "Proverbs 13:18-23",
+      "chapter": 13,
+      "verses": "18-23",
+      "verse_count": 4,
+      "text": "Poverty and shame come to him who refuses discipline Longing fulfilled is sweet to the soul A good man leaves an inheritance to his children's children An abundance of food is in poor people's fields",
+      "primary_category": "Legacy & Inheritance",
+      "secondary_categories": [
+        "Wealth & Possessions",
+        "Provision & Need"
+      ],
+      "themes": [
+        "poverty"
+      ],
+      "original_refs": [
+        "Proverbs 13:18",
+        "Proverbs 13:19",
+        "Proverbs 13:22",
+        "Proverbs 13:23"
+      ]
+    },
+    {
+      "reference": "Proverbs 14:1",
+      "chapter": 14,
+      "verses": "1",
+      "verse_count": 1,
+      "text": "Every wise woman builds her house",
+      "primary_category": "Integrity & Business",
+      "secondary_categories": [
+        "General Financial Wisdom"
+      ],
+      "themes": [
+        "share"
+      ],
+      "original_refs": [
+        "Proverbs 14:1"
+      ]
+    },
+    {
+      "reference": "Proverbs 14:10-14",
+      "chapter": 14,
+      "verses": "10-14",
+      "verse_count": 3,
+      "text": "The heart knows its own bitterness and joy; he will not share these with a stranger. The house of the wicked will be overthrown The unfaithful will be repaid for his own ways; likewise a good man will be rewarded for his ways.",
+      "primary_category": "Integrity & Business",
+      "secondary_categories": [
+        "General Financial Wisdom"
+      ],
+      "themes": [
+        "inherit"
+      ],
+      "original_refs": [
+        "Proverbs 14:10",
+        "Proverbs 14:11",
+        "Proverbs 14:14"
+      ]
+    },
+    {
+      "reference": "Proverbs 14:18-24",
+      "chapter": 14,
+      "verses": "18-24",
+      "verse_count": 4,
+      "text": "The simple inherit folly The poor person is shunned even by his own neighbor In all hard work there is profit The crown of the wise is their riches",
+      "primary_category": "Wealth & Possessions",
+      "secondary_categories": [
+        "Diligence & Work",
+        "Profit & Exchange"
+      ],
+      "themes": [
+        "poor"
+      ],
+      "original_refs": [
+        "Proverbs 14:18",
+        "Proverbs 14:20",
+        "Proverbs 14:23",
+        "Proverbs 14:24"
+      ]
+    },
+    {
+      "reference": "Proverbs 14:31",
+      "chapter": 14,
+      "verses": "31",
+      "verse_count": 1,
+      "text": "He who oppresses the poor shows contempt for his Maker",
+      "primary_category": "Wealth & Possessions",
+      "secondary_categories": [],
+      "themes": [
+        "poor"
+      ],
+      "original_refs": [
+        "Proverbs 14:31"
+      ]
+    },
+    {
+      "reference": "Proverbs 15:6",
+      "chapter": 15,
+      "verses": "6",
+      "verse_count": 1,
+      "text": "In the house of the righteous is much treasure",
+      "primary_category": "Wealth & Possessions",
+      "secondary_categories": [],
+      "themes": [
+        "sluggard"
+      ],
+      "original_refs": [
+        "Proverbs 15:6"
+      ]
+    },
+    {
+      "reference": "Proverbs 15:19",
+      "chapter": 15,
+      "verses": "19",
+      "verse_count": 1,
+      "text": "The way of the sluggard is like a thorn patch",
+      "primary_category": "Diligence & Work",
+      "secondary_categories": [],
+      "themes": [
+        "house"
+      ],
+      "original_refs": [
+        "Proverbs 15:19"
+      ]
+    },
+    {
+      "reference": "Proverbs 15:25-30",
+      "chapter": 15,
+      "verses": "25-30",
+      "verse_count": 3,
+      "text": "Yahweh will uproot the house of the proud He who is greedy for gain troubles his own house The light of the eyes rejoices the heart. Good news gives health to the bones.",
+      "primary_category": "Generosity & Giving",
+      "secondary_categories": [
+        "Profit & Exchange",
+        "Greed & Consequences"
+      ],
+      "themes": [
+        "house"
+      ],
+      "original_refs": [
+        "Proverbs 15:25",
+        "Proverbs 15:27",
+        "Proverbs 15:30"
+      ]
+    },
+    {
+      "reference": "Proverbs 16:11",
+      "chapter": 16,
+      "verses": "11",
+      "verse_count": 1,
+      "text": "Honest balances and scales are Yahweh's; all the weights in the bag are his work.",
+      "primary_category": "Integrity & Business",
+      "secondary_categories": [
+        "Diligence & Work"
+      ],
+      "themes": [
+        "gold"
+      ],
+      "original_refs": [
+        "Proverbs 16:11"
+      ]
+    },
+    {
+      "reference": "Proverbs 16:16-20",
+      "chapter": 16,
+      "verses": "16-20",
+      "verse_count": 3,
+      "text": "How much better it is to get wisdom than gold! Yes It is better to be of a lowly spirit with the poor He who heeds the Word finds prosperity. Whoever trusts in Yahweh is blessed.",
+      "primary_category": "Wealth & Possessions",
+      "secondary_categories": [],
+      "themes": [
+        "labor"
+      ],
+      "original_refs": [
+        "Proverbs 16:16",
+        "Proverbs 16:19",
+        "Proverbs 16:20"
+      ]
+    },
+    {
+      "reference": "Proverbs 16:26",
+      "chapter": 16,
+      "verses": "26",
+      "verse_count": 1,
+      "text": "The appetite of the laboring man labors for him; for his mouth urges him on.",
+      "primary_category": "Diligence & Work",
+      "secondary_categories": [],
+      "themes": [
+        "labor"
+      ],
+      "original_refs": [
+        "Proverbs 16:26"
+      ]
+    },
+    {
+      "reference": "Proverbs 17:3-20",
+      "chapter": 17,
+      "verses": "3-20",
+      "verse_count": 10,
+      "text": "The refining pot is for silver An evildoer heeds wicked lips. A liar gives ear to a mischievous tongue. Whoever mocks the poor reproaches his Maker. He who is glad at calamity shall not be unpunished. A bribe is a precious stone in the eyes of him who gives it; wherever he turns An evil man seeks only rebellion; therefore a cruel messenger shall be sent against him. Whoever rewards evil for good He who justifies the wicked Why is there money in the hand of a fool to buy wisdom A man void of understanding strikes hands One who has a perverse heart doesn't find prosperity",
+      "primary_category": "General Financial Wisdom",
+      "secondary_categories": [
+        "Wisdom & Understanding"
+      ],
+      "themes": [
+        "silver"
+      ],
+      "original_refs": [
+        "Proverbs 17:3",
+        "Proverbs 17:4",
+        "Proverbs 17:5",
+        "Proverbs 17:8",
+        "Proverbs 17:11",
+        "Proverbs 17:13",
+        "Proverbs 17:15",
+        "Proverbs 17:16",
+        "Proverbs 17:18",
+        "Proverbs 17:20"
+      ]
+    },
+    {
+      "reference": "Proverbs 18:9-16",
+      "chapter": 18,
+      "verses": "9-16",
+      "verse_count": 4,
+      "text": "One who is slack in his work is brother to him who is a master of destruction. The rich man's wealth is his strong city He who gives answer before he hears A man's gift makes room for him",
+      "primary_category": "Wealth & Possessions",
+      "secondary_categories": [
+        "Diligence & Work",
+        "Generosity & Giving"
+      ],
+      "themes": [
+        "harvest",
+        "fill"
+      ],
+      "original_refs": [
+        "Proverbs 18:9",
+        "Proverbs 18:11",
+        "Proverbs 18:13",
+        "Proverbs 18:16"
+      ]
+    },
+    {
+      "reference": "Proverbs 18:20-23",
+      "chapter": 18,
+      "verses": "20-23",
+      "verse_count": 2,
+      "text": "A man's stomach is filled with the fruit of his mouth. With the harvest of his lips he is satisfied. The poor plead for mercy",
+      "primary_category": "Diligence & Work",
+      "secondary_categories": [
+        "Wealth & Possessions",
+        "Provision & Need"
+      ],
+      "themes": [
+        "harvest",
+        "fill"
+      ],
+      "original_refs": [
+        "Proverbs 18:20",
+        "Proverbs 18:23"
+      ]
+    },
+    {
+      "reference": "Proverbs 19:1-9",
+      "chapter": 19,
+      "verses": "1-9",
+      "verse_count": 6,
+      "text": "Better is the poor who walks in his integrity than he who is perverse in his lips and is a fool. The foolishness of man subverts his way; his heart rages against Yahweh. Wealth adds many friends A false witness shall not be unpunished. He who pours out lies shall not go free. All the relatives of the poor shun him: how much more do his friends avoid him! He pursues them with pleas A false witness shall not be unpunished. He who utters lies shall perish.",
+      "primary_category": "Wealth & Possessions",
+      "secondary_categories": [
+        "Integrity & Business",
+        "Profit & Exchange"
+      ],
+      "themes": [
+        "rich",
+        "riches",
+        "inheritance",
+        "inherit",
+        "house"
+      ],
+      "original_refs": [
+        "Proverbs 19:1",
+        "Proverbs 19:3",
+        "Proverbs 19:4",
+        "Proverbs 19:5",
+        "Proverbs 19:7",
+        "Proverbs 19:9"
+      ]
+    },
+    {
+      "reference": "Proverbs 19:14-24",
+      "chapter": 19,
+      "verses": "14-24",
+      "verse_count": 6,
+      "text": "House and riches are an inheritance from fathers Slothfulness casts into a deep sleep. The idle soul shall suffer hunger. He who has pity on the poor lends to Yahweh; he will reward him. A hot-tempered man must pay the penalty That which makes a man to be desired is his kindness. A poor man is better than a liar. The sluggard buries his hand in the dish; he will not so much as bring it to his mouth again.",
+      "primary_category": "Integrity & Business",
+      "secondary_categories": [
+        "General Financial Wisdom"
+      ],
+      "themes": [
+        "just"
+      ],
+      "original_refs": [
+        "Proverbs 19:14",
+        "Proverbs 19:15",
+        "Proverbs 19:17",
+        "Proverbs 19:19",
+        "Proverbs 19:22",
+        "Proverbs 19:24"
+      ]
+    },
+    {
+      "reference": "Proverbs 19:28",
+      "chapter": 19,
+      "verses": "28",
+      "verse_count": 1,
+      "text": "A corrupt witness mocks justice",
+      "primary_category": "Integrity & Business",
+      "secondary_categories": [],
+      "themes": [
+        "just"
+      ],
+      "original_refs": [
+        "Proverbs 19:28"
+      ]
+    },
+    {
+      "reference": "Proverbs 20:1-4",
+      "chapter": 20,
+      "verses": "1-4",
+      "verse_count": 2,
+      "text": "Wine is a mocker The sluggard will not plow by reason of the winter; therefore he shall beg in harvest",
+      "primary_category": "Diligence & Work",
+      "secondary_categories": [
+        "Provision & Need"
+      ],
+      "themes": [
+        "weight"
+      ],
+      "original_refs": [
+        "Proverbs 20:1",
+        "Proverbs 20:4"
+      ]
+    },
+    {
+      "reference": "Proverbs 20:10",
+      "chapter": 20,
+      "verses": "10",
+      "verse_count": 1,
+      "text": "Differing weights and differing measures",
+      "primary_category": "Integrity & Business",
+      "secondary_categories": [],
+      "themes": [
+        "gold",
+        "abundance"
+      ],
+      "original_refs": [
+        "Proverbs 20:10"
+      ]
+    },
+    {
+      "reference": "Proverbs 20:15-23",
+      "chapter": 20,
+      "verses": "15-23",
+      "verse_count": 6,
+      "text": "There is gold and abundance of rubies; but the lips of knowledge are a rare jewel. Take the garment of one who puts up collateral for a stranger; and hold him in pledge for a wayward woman. Fraudulent food is sweet to a man Plans are established by advice; by wise guidance you wage war! An inheritance quickly gained at the beginning Yahweh detests differing weights",
+      "primary_category": "Profit & Exchange",
+      "secondary_categories": [
+        "Wealth & Possessions",
+        "Integrity & Business"
+      ],
+      "themes": [
+        "lend"
+      ],
+      "original_refs": [
+        "Proverbs 20:15",
+        "Proverbs 20:16",
+        "Proverbs 20:17",
+        "Proverbs 20:18",
+        "Proverbs 20:21",
+        "Proverbs 20:23"
+      ]
+    },
+    {
+      "reference": "Proverbs 20:29",
+      "chapter": 20,
+      "verses": "29",
+      "verse_count": 1,
+      "text": "The glory of young men is their strength. The splendor of old men is their gray hair.",
+      "primary_category": "Debt & Lending",
+      "secondary_categories": [],
+      "themes": [
+        "lend"
+      ],
+      "original_refs": [
+        "Proverbs 20:29"
+      ]
+    },
+    {
+      "reference": "Proverbs 21:1-30",
+      "chapter": 21,
+      "verses": "1-30",
+      "verse_count": 16,
+      "text": "The king's heart is in Yahweh's hand like the watercourses. He turns it wherever he desires. To do righteousness and justice is more acceptable to Yahweh than sacrifice. The plans of the diligent surely lead to profit; and everyone who is hasty surely rushes to poverty. Getting treasures by a lying tongue is a fleeting vapor for those who seek death. It is better to dwell in the corner of the housetop The Righteous One considers the house of the wicked Whoever stops his ears at the cry of the poor A gift in secret pacifies anger; and a bribe in the cloak It is joy to the righteous to do justice; but it is a destruction to the workers of iniquity. He who loves pleasure shall be a poor man. He who loves wine and oil shall not be rich. There is precious treasure and oil in the dwelling of the wise; but a foolish man swallows it up. A wise man scales the city of the mighty The desire of the sluggard kills him There are those who covet greedily all day long; but the righteous give and don't withhold. A false witness will perish There is no wisdom nor understanding nor counsel against Yahweh.",
+      "primary_category": "General Financial Wisdom",
+      "secondary_categories": [
+        "Wisdom & Understanding"
+      ],
+      "themes": [
+        "hand"
+      ],
+      "original_refs": [
+        "Proverbs 21:1",
+        "Proverbs 21:3",
+        "Proverbs 21:5",
+        "Proverbs 21:6",
+        "Proverbs 21:9",
+        "Proverbs 21:12",
+        "Proverbs 21:13",
+        "Proverbs 21:14",
+        "Proverbs 21:15",
+        "Proverbs 21:17",
+        "Proverbs 21:20",
+        "Proverbs 21:22",
+        "Proverbs 21:25",
+        "Proverbs 21:26",
+        "Proverbs 21:28",
+        "Proverbs 21:30"
+      ]
+    },
+    {
+      "reference": "Proverbs 22:1-9",
+      "chapter": 22,
+      "verses": "1-9",
+      "verse_count": 5,
+      "text": "A good name is more desirable than great riches The rich and the poor have this in common: Yahweh is the maker of them all. The result of humility and the fear of Yahweh is wealth The rich rule over the poor. The borrower is servant to the lender. He who has a generous eye will be blessed; for he shares his food with the poor.",
+      "primary_category": "Wealth & Possessions",
+      "secondary_categories": [
+        "Generosity & Giving",
+        "Debt & Lending"
+      ],
+      "themes": [
+        "sluggard"
+      ],
+      "original_refs": [
+        "Proverbs 22:1",
+        "Proverbs 22:2",
+        "Proverbs 22:4",
+        "Proverbs 22:7",
+        "Proverbs 22:9"
+      ]
+    },
+    {
+      "reference": "Proverbs 22:13-16",
+      "chapter": 22,
+      "verses": "13-16",
+      "verse_count": 2,
+      "text": "The sluggard says Whoever oppresses the poor for his own increase and whoever gives to the rich",
+      "primary_category": "Wealth & Possessions",
+      "secondary_categories": [
+        "Diligence & Work",
+        "Generosity & Giving"
+      ],
+      "themes": [
+        "poor"
+      ],
+      "original_refs": [
+        "Proverbs 22:13",
+        "Proverbs 22:16"
+      ]
+    },
+    {
+      "reference": "Proverbs 22:22",
+      "chapter": 22,
+      "verses": "22",
+      "verse_count": 1,
+      "text": "Don't exploit the poor",
+      "primary_category": "Wealth & Possessions",
+      "secondary_categories": [],
+      "themes": [
+        "hand"
+      ],
+      "original_refs": [
+        "Proverbs 22:22"
+      ]
+    },
+    {
+      "reference": "Proverbs 22:26-29",
+      "chapter": 22,
+      "verses": "26-29",
+      "verse_count": 3,
+      "text": "Don't you be one of those who strike hands If you don't have means to pay Do you see a man skilled in his work? He will serve kings. He won't serve obscure men.",
+      "primary_category": "Diligence & Work",
+      "secondary_categories": [
+        "Profit & Exchange"
+      ],
+      "themes": [
+        "hand"
+      ],
+      "original_refs": [
+        "Proverbs 22:26",
+        "Proverbs 22:27",
+        "Proverbs 22:29"
+      ]
+    },
+    {
+      "reference": "Proverbs 23:4-6",
+      "chapter": 23,
+      "verses": "4-6",
+      "verse_count": 2,
+      "text": "Don't weary yourself to be rich. In your wisdom Don't eat the food of him who has a stingy eye",
+      "primary_category": "Wealth & Possessions",
+      "secondary_categories": [
+        "Provision & Need"
+      ],
+      "themes": [
+        "field"
+      ],
+      "original_refs": [
+        "Proverbs 23:4",
+        "Proverbs 23:6"
+      ]
+    },
+    {
+      "reference": "Proverbs 23:10-13",
+      "chapter": 23,
+      "verses": "10-13",
+      "verse_count": 3,
+      "text": "Don't move the ancient boundary stone. Don't encroach on the fields of the fatherless: for their Defender is strong. He will plead their case against you. Don't withhold correction from a child. If you punish him with the rod",
+      "primary_category": "Generosity & Giving",
+      "secondary_categories": [
+        "Profit & Exchange"
+      ],
+      "themes": [
+        "wine"
+      ],
+      "original_refs": [
+        "Proverbs 23:10",
+        "Proverbs 23:11",
+        "Proverbs 23:13"
+      ]
+    },
+    {
+      "reference": "Proverbs 23:20-21",
+      "chapter": 23,
+      "verses": "20-21",
+      "verse_count": 2,
+      "text": "Don't be among ones drinking too much wine for the drunkard and the glutton shall become poor; and drowsiness clothes them in rags.",
+      "primary_category": "Wealth & Possessions",
+      "secondary_categories": [
+        "Provision & Need"
+      ],
+      "themes": [
+        "need"
+      ],
+      "original_refs": [
+        "Proverbs 23:20",
+        "Proverbs 23:21"
+      ]
+    },
+    {
+      "reference": "Proverbs 23:29-31",
+      "chapter": 23,
+      "verses": "29-31",
+      "verse_count": 3,
+      "text": "Who has woe? Who has sorrow? Who has strife? Who has complaints? Who has needless bruises? Who has bloodshot eyes? Those who stay long at the wine; those who go to seek out mixed wine. Don't look at the wine when it is red",
+      "primary_category": "Provision & Need",
+      "secondary_categories": [],
+      "themes": [
+        "need"
+      ],
+      "original_refs": [
+        "Proverbs 23:29",
+        "Proverbs 23:30",
+        "Proverbs 23:31"
+      ]
+    },
+    {
+      "reference": "Proverbs 24:3-6",
+      "chapter": 24,
+      "verses": "3-6",
+      "verse_count": 4,
+      "text": "Through wisdom a house is built; by understanding it is established; by knowledge the rooms are filled with all rare and beautiful treasure. A wise man has great power; and a knowledgeable man increases strength; for by wise guidance you wage your war; and victory is in many advisors.",
+      "primary_category": "Profit & Exchange",
+      "secondary_categories": [
+        "Wealth & Possessions",
+        "Provision & Need"
+      ],
+      "themes": [
+        "reward"
+      ],
+      "original_refs": [
+        "Proverbs 24:3",
+        "Proverbs 24:4",
+        "Proverbs 24:5",
+        "Proverbs 24:6"
+      ]
+    },
+    {
+      "reference": "Proverbs 24:20",
+      "chapter": 24,
+      "verses": "20",
+      "verse_count": 1,
+      "text": "for there will be no reward to the evil man; and the lamp of the wicked shall be snuffed out.",
+      "primary_category": "Integrity & Business",
+      "secondary_categories": [],
+      "themes": [
+        "work"
+      ],
+      "original_refs": [
+        "Proverbs 24:20"
+      ]
+    },
+    {
+      "reference": "Proverbs 24:27-30",
+      "chapter": 24,
+      "verses": "27-30",
+      "verse_count": 3,
+      "text": "Prepare your work outside Don't be a witness against your neighbor without cause. Don't deceive with your lips. I went by the field of the sluggard",
+      "primary_category": "Diligence & Work",
+      "secondary_categories": [
+        "Profit & Exchange"
+      ],
+      "themes": [
+        "poverty"
+      ],
+      "original_refs": [
+        "Proverbs 24:27",
+        "Proverbs 24:28",
+        "Proverbs 24:30"
+      ]
+    },
+    {
+      "reference": "Proverbs 24:34",
+      "chapter": 24,
+      "verses": "34",
+      "verse_count": 1,
+      "text": "so your poverty will come as a robber",
+      "primary_category": "Wealth & Possessions",
+      "secondary_categories": [],
+      "themes": [
+        "poverty"
+      ],
+      "original_refs": [
+        "Proverbs 24:34"
+      ]
+    },
+    {
+      "reference": "Proverbs 25:4",
+      "chapter": 25,
+      "verses": "4",
+      "verse_count": 1,
+      "text": "Take away the dross from the silver",
+      "primary_category": "Wealth & Possessions",
+      "secondary_categories": [],
+      "themes": [
+        "silver",
+        "gold"
+      ],
+      "original_refs": [
+        "Proverbs 25:4"
+      ]
+    },
+    {
+      "reference": "Proverbs 25:11-13",
+      "chapter": 25,
+      "verses": "11-13",
+      "verse_count": 3,
+      "text": "A word fitly spoken is like apples of gold in settings of silver. As an earring of gold As the cold of snow in the time of harvest",
+      "primary_category": "Wealth & Possessions",
+      "secondary_categories": [
+        "Diligence & Work"
+      ],
+      "themes": [
+        "house"
+      ],
+      "original_refs": [
+        "Proverbs 25:11",
+        "Proverbs 25:12",
+        "Proverbs 25:13"
+      ]
+    },
+    {
+      "reference": "Proverbs 25:17-18",
+      "chapter": 25,
+      "verses": "17-18",
+      "verse_count": 2,
+      "text": "Let your foot be seldom in your neighbor's house A man who gives false testimony against his neighbor is like a club",
+      "primary_category": "Generosity & Giving",
+      "secondary_categories": [
+        "Integrity & Business",
+        "Profit & Exchange"
+      ],
+      "themes": [
+        "house"
+      ],
+      "original_refs": [
+        "Proverbs 25:17",
+        "Proverbs 25:18"
+      ]
+    },
+    {
+      "reference": "Proverbs 25:24",
+      "chapter": 25,
+      "verses": "24",
+      "verse_count": 1,
+      "text": "It is better to dwell in the corner of the housetop",
+      "primary_category": "General Financial Wisdom",
+      "secondary_categories": [],
+      "themes": [
+        "house"
+      ],
+      "original_refs": [
+        "Proverbs 25:24"
+      ]
+    },
+    {
+      "reference": "Proverbs 26:6-9",
+      "chapter": 26,
+      "verses": "6-9",
+      "verse_count": 2,
+      "text": "One who sends a message by the hand of a fool is cutting off feet and drinking violence. Like a thornbush that goes into the hand of a drunkard",
+      "primary_category": "General Financial Wisdom",
+      "secondary_categories": [],
+      "themes": [
+        "sluggard"
+      ],
+      "original_refs": [
+        "Proverbs 26:6",
+        "Proverbs 26:9"
+      ]
+    },
+    {
+      "reference": "Proverbs 26:13-16",
+      "chapter": 26,
+      "verses": "13-16",
+      "verse_count": 3,
+      "text": "The sluggard says The sluggard buries his hand in the dish. He is too lazy to bring it back to his mouth. The sluggard is wiser in his own eyes than seven men who answer with discretion.",
+      "primary_category": "General Financial Wisdom",
+      "secondary_categories": [],
+      "themes": [
+        "lack"
+      ],
+      "original_refs": [
+        "Proverbs 26:13",
+        "Proverbs 26:15",
+        "Proverbs 26:16"
+      ]
+    },
+    {
+      "reference": "Proverbs 26:20-23",
+      "chapter": 26,
+      "verses": "20-23",
+      "verse_count": 2,
+      "text": "For lack of wood a fire goes out. Without gossip Like silver dross on an earthen vessel are the lips of a fervent one with an evil heart.",
+      "primary_category": "Wealth & Possessions",
+      "secondary_categories": [],
+      "themes": [
+        "work"
+      ],
+      "original_refs": [
+        "Proverbs 26:20",
+        "Proverbs 26:23"
+      ]
+    },
+    {
+      "reference": "Proverbs 26:28",
+      "chapter": 26,
+      "verses": "28",
+      "verse_count": 1,
+      "text": "A lying tongue hates those it hurts; and a flattering mouth works ruin.",
+      "primary_category": "Diligence & Work",
+      "secondary_categories": [],
+      "themes": [
+        "work"
+      ],
+      "original_refs": [
+        "Proverbs 26:28"
+      ]
+    },
+    {
+      "reference": "Proverbs 27:10",
+      "chapter": 27,
+      "verses": "10",
+      "verse_count": 1,
+      "text": "Don't forsake your friend and your father's friend. Don't go to your brother's house in the day of your disaster: better is a neighbor who is near than a distant brother.",
+      "primary_category": "General Financial Wisdom",
+      "secondary_categories": [],
+      "themes": [
+        "silver"
+      ],
+      "original_refs": [
+        "Proverbs 27:10"
+      ]
+    },
+    {
+      "reference": "Proverbs 27:21-27",
+      "chapter": 27,
+      "verses": "21-27",
+      "verse_count": 4,
+      "text": "The crucible is for silver Though you grind a fool in a mortar with a pestle along with grain for riches are not forever There will be plenty of goats' milk for your food",
+      "primary_category": "Wealth & Possessions",
+      "secondary_categories": [
+        "Provision & Need"
+      ],
+      "themes": [
+        "silver"
+      ],
+      "original_refs": [
+        "Proverbs 27:21",
+        "Proverbs 27:22",
+        "Proverbs 27:24",
+        "Proverbs 27:27"
+      ]
+    },
+    {
+      "reference": "Proverbs 28:3-27",
+      "chapter": 28,
+      "verses": "3-27",
+      "verse_count": 13,
+      "text": "A needy man who oppresses the poor is like a driving rain which leaves no crops. Evil men don't understand justice; but those who seek Yahweh understand it fully. Better is the poor who walks in his integrity He who increases his wealth by excessive interest gathers it for one who has pity on the poor. The rich man is wise in his own eyes; but the poor who has understanding sees through him. He who conceals his sins doesn't prosper A tyrannical ruler lacks judgment. One who hates ill-gotten gain will have long days. One who works his land will have an abundance of food; but one who chases fantasies will have his fill of poverty. A faithful man is rich with blessings; but one who is eager to be rich will not go unpunished. To show partiality is not good; yet a man will do wrong for a piece of bread. A stingy man hurries after riches One who is greedy stirs up strife; but one who trusts in Yahweh will prosper. One who gives to the poor has no lack; but one who closes his eyes will have many curses.",
+      "primary_category": "Wealth & Possessions",
+      "secondary_categories": [
+        "Diligence & Work",
+        "Generosity & Giving"
+      ],
+      "themes": [
+        "poor",
+        "need"
+      ],
+      "original_refs": [
+        "Proverbs 28:3",
+        "Proverbs 28:5",
+        "Proverbs 28:6",
+        "Proverbs 28:8",
+        "Proverbs 28:11",
+        "Proverbs 28:13",
+        "Proverbs 28:16",
+        "Proverbs 28:19",
+        "Proverbs 28:20",
+        "Proverbs 28:21",
+        "Proverbs 28:22",
+        "Proverbs 28:25",
+        "Proverbs 28:27"
+      ]
+    },
+    {
+      "reference": "Proverbs 29:3-7",
+      "chapter": 29,
+      "verses": "3-7",
+      "verse_count": 3,
+      "text": "Whoever loves wisdom brings joy to his father; but a companion of prostitutes squanders his wealth. The king by justice makes the land stable The righteous care about justice for the poor. The wicked aren't concerned about knowledge.",
+      "primary_category": "Wealth & Possessions",
+      "secondary_categories": [
+        "Integrity & Business"
+      ],
+      "themes": [
+        "poor",
+        "give"
+      ],
+      "original_refs": [
+        "Proverbs 29:3",
+        "Proverbs 29:4",
+        "Proverbs 29:7"
+      ]
+    },
+    {
+      "reference": "Proverbs 29:13-16",
+      "chapter": 29,
+      "verses": "13-16",
+      "verse_count": 4,
+      "text": "The poor man and the oppressor have this in common: Yahweh gives sight to the eyes of both. The king who fairly judges the poor The rod of correction gives wisdom When the wicked increase",
+      "primary_category": "General Financial Wisdom",
+      "secondary_categories": [
+        "Wisdom & Understanding"
+      ],
+      "themes": [
+        "dishonest"
+      ],
+      "original_refs": [
+        "Proverbs 29:13",
+        "Proverbs 29:14",
+        "Proverbs 29:15",
+        "Proverbs 29:16"
+      ]
+    },
+    {
+      "reference": "Proverbs 29:27",
+      "chapter": 29,
+      "verses": "27",
+      "verse_count": 1,
+      "text": "A dishonest man detests the righteous",
+      "primary_category": "Integrity & Business",
+      "secondary_categories": [],
+      "themes": [
+        "dishonest"
+      ],
+      "original_refs": [
+        "Proverbs 29:27"
+      ]
+    },
+    {
+      "reference": "Proverbs 30:8",
+      "chapter": 30,
+      "verses": "8",
+      "verse_count": 1,
+      "text": "Remove far from me falsehood and lies. Give me neither poverty nor riches. Feed me with the food that is needful for me;",
+      "primary_category": "Wealth & Possessions",
+      "secondary_categories": [
+        "Generosity & Giving",
+        "Integrity & Business"
+      ],
+      "themes": [
+        "give"
+      ],
+      "original_refs": [
+        "Proverbs 30:8"
+      ]
+    },
+    {
+      "reference": "Proverbs 30:15",
+      "chapter": 30,
+      "verses": "15",
+      "verse_count": 1,
+      "text": "The leach has two daughters: 'Give",
+      "primary_category": "Generosity & Giving",
+      "secondary_categories": [],
+      "themes": [
+        "food",
+        "fill"
+      ],
+      "original_refs": [
+        "Proverbs 30:15"
+      ]
+    },
+    {
+      "reference": "Proverbs 30:22-23",
+      "chapter": 30,
+      "verses": "22-23",
+      "verse_count": 2,
+      "text": "For a servant when he is king; a fool when he is filled with food; for an unloved woman when she is married; and a handmaid who is heir to her mistress.",
+      "primary_category": "General Financial Wisdom",
+      "secondary_categories": [],
+      "themes": [
+        "hand"
+      ],
+      "original_refs": [
+        "Proverbs 30:22",
+        "Proverbs 30:23"
+      ]
+    },
+    {
+      "reference": "Proverbs 30:28",
+      "chapter": 30,
+      "verses": "28",
+      "verse_count": 1,
+      "text": "You can catch a lizard with your hands",
+      "primary_category": "General Financial Wisdom",
+      "secondary_categories": [],
+      "themes": [
+        "hand"
+      ],
+      "original_refs": [
+        "Proverbs 30:28"
+      ]
+    },
+    {
+      "reference": "Proverbs 31:3-6",
+      "chapter": 31,
+      "verses": "3-6",
+      "verse_count": 2,
+      "text": "Don't give your strength to women Give strong drink to him who is ready to perish; and wine to the bitter in soul:",
+      "primary_category": "Generosity & Giving",
+      "secondary_categories": [
+        "Provision & Need"
+      ],
+      "themes": [
+        "gain",
+        "lack"
+      ],
+      "original_refs": [
+        "Proverbs 31:3",
+        "Proverbs 31:6"
+      ]
+    },
+    {
+      "reference": "Proverbs 31:11-21",
+      "chapter": 31,
+      "verses": "11-21",
+      "verse_count": 7,
+      "text": "The heart of her husband trusts in her. He shall have no lack of gain. She is like the merchant ships. She brings her bread from afar. She considers a field She perceives that her merchandise is profitable. Her lamp doesn't go out by night. She lays her hands to the distaff She opens her arms to the poor; yes She is not afraid of the snow for her household; for all her household are clothed with scarlet.",
+      "primary_category": "Profit & Exchange",
+      "secondary_categories": [
+        "Wealth & Possessions",
+        "Provision & Need"
+      ],
+      "themes": [
+        "house"
+      ],
+      "original_refs": [
+        "Proverbs 31:11",
+        "Proverbs 31:14",
+        "Proverbs 31:16",
+        "Proverbs 31:18",
+        "Proverbs 31:19",
+        "Proverbs 31:20",
+        "Proverbs 31:21"
+      ]
+    },
+    {
+      "reference": "Proverbs 31:27",
+      "chapter": 31,
+      "verses": "27",
+      "verse_count": 1,
+      "text": "She looks well to the ways of her household",
+      "primary_category": "General Financial Wisdom",
+      "secondary_categories": [],
+      "themes": [
+        "work",
+        "give",
+        "hand"
+      ],
+      "original_refs": [
+        "Proverbs 31:27"
+      ]
+    },
+    {
+      "reference": "Proverbs 31:31",
+      "chapter": 31,
+      "verses": "31",
+      "verse_count": 1,
+      "text": "Give her of the fruit of her hands! Let her works praise her in the gates!",
+      "primary_category": "Diligence & Work",
+      "secondary_categories": [
+        "Generosity & Giving"
+      ],
+      "themes": [
+        "work",
+        "give",
+        "hand"
+      ],
+      "original_refs": [
+        "Proverbs 31:31"
+      ]
+    }
+  ]
+}

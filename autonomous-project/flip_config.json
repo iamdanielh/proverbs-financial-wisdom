@@ -1,0 +1,17 @@
+{
+  "categories": [
+    "laptops",
+    "gaming",
+    "electronics",
+    "sneakers"
+  ],
+  "min_profit": 50,
+  "min_roi": 15,
+  "max_investment": 2000,
+  "preferred_platforms": [
+    "ebay",
+    "stockx",
+    "facebook"
+  ],
+  "data_dir": "./data"
+}

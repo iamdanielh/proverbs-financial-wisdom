@@ -1,0 +1,117 @@
+{
+  "clusters": [
+    {
+      "id": 1,
+      "name": "Diligence and Work Ethic",
+      "description": "The ant as a model of self-motivated industry and the consequences of laziness",
+      "key_verses": [
+        {"reference": "Proverbs 6:6", "text": "Go to the ant, O sluggard; consider her ways, and be wise."},
+        {"reference": "Proverbs 6:7", "text": "Without having any chief, she prepares her bread in summer and gathers her food in harvest."},
+        {"reference": "Proverbs 10:4", "text": "A slack hand causes poverty, but the hand of the diligent makes rich."},
+        {"reference": "Proverbs 10:5", "text": "He who gathers in summer is a prudent son, but he who sleeps in harvest is a son who brings shame."},
+        {"reference": "Proverbs 10:26", "text": "Like vinegar to the teeth and smoke to the eyes, so is the sluggard to those who send him."}
+      ],
+      "count": 5
+    },
+    {
+      "id": 2,
+      "name": "Laziness and Poverty",
+      "description": "Warnings about the inevitable consequences of idleness and neglect",
+      "key_verses": [
+        {"reference": "Proverbs 6:10", "text": "A little sleep, a little slumber, a little folding of the hands to rest."},
+        {"reference": "Proverbs 6:11", "text": "And poverty will come upon you like a robber, and want like an armed man."}
+      ],
+      "count": 2
+    },
+    {
+      "id": 3,
+      "name": "Debt and Financial Risk",
+      "description": "Warnings about co-signing, pledges, and the snare of debt commitments",
+      "key_verses": [
+        {"reference": "Proverbs 6:1", "text": "My son, if you have put up security for your neighbor, have given your pledge for a stranger..."},
+        {"reference": "Proverbs 6:2", "text": "If you are snared in the words of your mouth, caught in the words of your mouth."},
+        {"reference": "Proverbs 6:3", "text": "Do this then, my son, and save yourself; humble yourself, and plead urgently with your neighbor."},
+        {"reference": "Proverbs 6:5", "text": "Save yourself like a gazelle from the hand of the hunter, like a bird from the hand of the fowler."},
+        {"reference": "Proverbs 11:15", "text": "He who puts up security for a stranger will surely suffer harm, but he who hates striking hands in pledge is secure."},
+        {"reference": "Proverbs 3:28", "text": "Do not say to your neighbor, 'Go, and come again, tomorrow I will give it'—when you have it with you."}
+      ],
+      "count": 6
+    },
+    {
+      "id": 4,
+      "name": "Generosity and Giving",
+      "description": "The paradox of generosity—giving leads to abundance, withholding leads to want",
+      "key_verses": [
+        {"reference": "Proverbs 3:27", "text": "Do not withhold good from those to whom it is due, when it is in your power to do it."},
+        {"reference": "Proverbs 11:24", "text": "One gives freely, yet grows all the richer; another withholds what he should give, and only suffers want."},
+        {"reference": "Proverbs 11:25", "text": "Whoever brings blessing will be enriched, and he who waters will himself be watered."},
+        {"reference": "Proverbs 11:26", "text": "The people curse him who holds back grain, but a blessing is on the head of him who sells it."}
+      ],
+      "count": 4
+    },
+    {
+      "id": 5,
+      "name": "Stewardship and Tithing",
+      "description": "Honoring God with the firstfruits and receiving abundance in return",
+      "key_verses": [
+        {"reference": "Proverbs 3:9", "text": "Honor the Lord with your wealth and with the firstfruits of all your produce."},
+        {"reference": "Proverbs 3:10", "text": "Then your barns will be filled with plenty, and your vats will be bursting with wine."}
+      ],
+      "count": 2
+    },
+    {
+      "id": 6,
+      "name": "Wisdom's True Value",
+      "description": "Wisdom surpasses silver, gold, and jewels in worth and provides enduring wealth",
+      "key_verses": [
+        {"reference": "Proverbs 3:13", "text": "Blessed is the one who finds wisdom, and the one who gets understanding."},
+        {"reference": "Proverbs 3:14", "text": "For the gain from her is better than gain from silver and her profit better than gold."},
+        {"reference": "Proverbs 3:15", "text": "She is more precious than jewels, and nothing you desire can compare with her."},
+        {"reference": "Proverbs 4:7", "text": "The beginning of wisdom is this: Get wisdom, and whatever you get, get insight."},
+        {"reference": "Proverbs 8:10", "text": "Take my instruction instead of silver, and knowledge rather than choice gold."},
+        {"reference": "Proverbs 8:11", "text": "For wisdom is better than jewels, and all that you may desire cannot compare with her."},
+        {"reference": "Proverbs 8:18", "text": "Riches and honor are with me, enduring wealth and righteousness."},
+        {"reference": "Proverbs 8:19", "text": "My fruit is better than gold, even fine gold, and my yield than choice silver."},
+        {"reference": "Proverbs 8:21", "text": "Granting an inheritance to those who love me, and filling their treasuries."}
+      ],
+      "count": 9
+    },
+    {
+      "id": 7,
+      "name": "Integrity and Honesty",
+      "description": "The importance of honest business practices and just weights",
+      "key_verses": [
+        {"reference": "Proverbs 10:2", "text": "Treasures gained by wickedness do not profit, but righteousness delivers from death."},
+        {"reference": "Proverbs 11:1", "text": "A false balance is an abomination to the Lord, but a just weight is his delight."},
+        {"reference": "Proverbs 11:4", "text": "Riches do not profit in the day of wrath, but righteousness delivers from death."},
+        {"reference": "Proverbs 10:16", "text": "The wage of the righteous leads to life, the gain of the wicked to sin."}
+      ],
+      "count": 4
+    },
+    {
+      "id": 8,
+      "name": "Wealth, Poverty and Social Impact",
+      "description": "The relationship between wealth and security, poverty and ruin, and the impact of character",
+      "key_verses": [
+        {"reference": "Proverbs 10:3", "text": "The Lord does not let the righteous go hungry, but he thwarts the craving of the wicked."},
+        {"reference": "Proverbs 10:15", "text": "A rich man's wealth is his strong city; the poverty of the poor is their ruin."},
+        {"reference": "Proverbs 10:22", "text": "The blessing of the Lord makes rich, and he adds no sorrow with it."},
+        {"reference": "Proverbs 11:16", "text": "A gracious woman gets honor, and violent men get riches."},
+        {"reference": "Proverbs 6:30-31", "text": "People do not despise a thief if he steals to satisfy his appetite when he is hungry. Yet if he is caught, he will pay sevenfold; he will give all the goods of his house."},
+        {"reference": "Proverbs 1:19", "text": "Such are the ways of everyone who is greedy for unjust gain; it takes away the life of its possessors."}
+      ],
+      "count": 6
+    },
+    {
+      "id": 9,
+      "name": "Fidelity and Resource Management",
+      "description": "Guarding against wasting resources and the consequences of unfaithfulness",
+      "key_verses": [
+        {"reference": "Proverbs 5:10", "text": "Lest strangers take their fill of your strength, and your labors go to the house of a foreigner."}
+      ],
+      "count": 1
+    }
+  ],
+  "total_verses": 41,
+  "total_clusters": 9
+}

@@ -1,0 +1,14 @@
+{
+  "coins": [
+    "bitcoin",
+    "ethereum",
+    "solana",
+    "cardano",
+    "avalanche-2",
+    "chainlink",
+    "polkadot"
+  ],
+  "volume_spike_threshold": 2.0,
+  "price_change_threshold": 0.05,
+  "data_dir": "./data"
+}

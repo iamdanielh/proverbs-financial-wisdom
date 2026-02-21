@@ -1,0 +1,21 @@
+{
+  "title": "Proverbs: A Practical Guide to Financial Wisdom",
+  "subtitle": "Ancient Wisdom for Modern Money Management",
+  "chapters": [
+    {"number": 0, "title": "Introduction", "text_file": "chapter-00-introduction.txt"},
+    {"number": 1, "title": "The Ant's Economy - Lessons in Diligence", "text_file": "chapter-01-diligence.txt"},
+    {"number": 2, "title": "The Robber Called Poverty - The High Cost of Laziness", "text_file": "chapter-02-poverty.txt"},
+    {"number": 3, "title": "The Snare of Co-Signing - Managing Financial Risk", "text_file": "chapter-03-cosigning.txt"},
+    {"number": 4, "title": "Wisdom's True Value - Investing in Understanding", "text_file": "chapter-04-wisdom.txt"},
+    {"number": 5, "title": "The Paradox of Generosity - Giving Grows Wealth", "text_file": "chapter-05-generosity.txt"},
+    {"number": 6, "title": "Honest Scales - Integrity in Business", "text_file": "chapter-06-integrity.txt"},
+    {"number": 7, "title": "Contentment and Moderation - The Middle Path", "text_file": "chapter-07-contentment.txt"},
+    {"number": 8, "title": "The Plans of the Diligent - Strategic Thinking", "text_file": "chapter-08-planning.txt"},
+    {"number": 9, "title": "Legacy and Inheritance - Wealth Beyond the Grave", "text_file": "chapter-09-legacy.txt"},
+    {"number": 10, "title": "The Gazelle's Escape - Urgency in Correction", "text_file": "chapter-10-escape.txt"},
+    {"number": 11, "title": "Conclusion - The Integrated Life", "text_file": "chapter-11-conclusion.txt"}
+  ],
+  "total_chapters": 12,
+  "source_book": "/home/dangel/.openclaw/workspace/PROVERBS-FINANCIAL-WISDOM.md",
+  "created": "2026-02-19"
+}

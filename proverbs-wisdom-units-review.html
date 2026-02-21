@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proverbs Wisdom Units - Complete Teachings</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: Georgia, Times, serif;
+            background: #fafafa;
+            color: #333;
+            line-height: 1.7;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            padding: 30px 20px;
+            margin: -20px -20px 30px -20px;
+            text-align: center;
+        }
+        
+        h1 { font-size: 1.8em; margin-bottom: 10px; }
+        h2 { font-size: 1.4em; margin: 40px 0 20px; color: #2c3e50; border-bottom: 3px solid #c9a227; padding-bottom: 10px; }
+        h3 { font-size: 1.2em; color: #34495e; margin: 30px 0 15px; text-transform: uppercase; letter-spacing: 1px; }
+        
+        .stats {
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .filter-bar {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .filter-bar button {
+            background: #2c3e50;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            margin: 5px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+        
+        .filter-bar button:hover {
+            background: #c9a227;
+        }
+        
+        .unit {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .unit.multi {
+            border-left: 4px solid #c9a227;
+        }
+        
+        .unit.single {
+            border-left: 4px solid #95a5a6;
+        }
+        
+        .unit-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+        
+        .unit-ref {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .unit-meta {
+            text-align: right;
+            font-size: 0.9em;
+            color: #666;
+        }
+        
+        .verse-count {
+            background: #c9a227;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.85em;
+        }
+        
+        .unit-text {
+            font-family: Georgia, serif;
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #333;
+            margin: 15px 0;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+        
+        .unit-categories {
+            margin-top: 15px;
+            font-size: 0.95em;
+        }
+        
+        .primary-cat {
+            background: #2c3e50;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 15px;
+            margin-right: 10px;
+            font-weight: 600;
+        }
+        
+        .secondary-cat {
+            background: #bdc3c7;
+            color: #2c3e50;
+            padding: 4px 10px;
+            border-radius: 12px;
+            margin-right: 8px;
+            font-size: 0.9em;
+        }
+        
+        .themes {
+            margin-top: 12px;
+            font-size: 0.85em;
+            color: #666;
+        }
+        
+        .theme-tag {
+            background: #e8f4f8;
+            color: #2980b9;
+            padding: 3px 8px;
+            border-radius: 10px;
+            margin-right: 5px;
+        }
+        
+        .highlight {
+            background: #fff3cd;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        
+        @media (max-width: 600px) {
+            body { padding: 15px; }
+            h1 { font-size: 1.5em; }
+            .unit-header { flex-direction: column; }
+            .unit-meta { text-align: left; margin-top: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>📖 Proverbs Wisdom Units</h1>
+    <p>98 Complete Teachings | 243 Verses | Corrected Categorizations</p>
+</header>
+
+<div class="stats">
+    <h2>📊 Overview</h2>
+    <p><strong>Total Wisdom Units:</strong> 98</p>
+    <p><strong>Multi-Verse Teachings:</strong> 52 (complete sayings)</p>
+    <p><strong>Single-Verse Units:</strong> 46</p>
+    <p><strong>Total Verses Covered:</strong> 243 ✅</p>
+</div>
+
+<div id="units-container"></div>
+
+<script>
+const units = [];
+
+function loadUnits() {
+    fetch('proverbs-wisdom-units.json')
+        .then(r => r.json())
+        .then(data => {
+            units.push(...data.units);
+            renderUnits(units);
+        })
+        .catch(err => {
+            document.getElementById('units-container').innerHTML = 
+                '<p style="color:red">Error loading data. Make sure proverbs-wisdom-units.json is in the same directory.</p>';
+        });
+}
+
+function renderUnits(data) {
+    const container = document.getElementById('units-container');
+    let html = '<h2>Wisdom Units by Chapter</h2>';
+    
+    let currentCh = 0;
+    
+    data.forEach(unit => {
+        if (unit.chapter !== currentCh) {
+            if (currentCh !== 0) html += '<hr style="margin:30px 0;">';
+            html += `<h2>Chapter ${unit.chapter}</h2>`;
+            currentCh = unit.chapter;
+        }
+        
+        const isMulti = unit.verse_count > 1;
+        const themes = unit.themes ? unit.themes.slice(0, 5) : [];
+        
+        html += `
+        <div class="unit ${isMulti ? 'multi' : 'single'}">
+            <div class="unit-header">
+                <span class="unit-ref">${unit.reference}</span>
+                <span class="unit-meta">
+                    <span class="verse-count">${unit.verse_count} verse${unit.verse_count > 1 ? 's' : ''}</span>
+                </span>
+            </div>
+            <div class="unit-text">${unit.text}</div>
+            <div class="unit-categories">
+                <span class="primary-cat">${unit.primary_category}</span>
+                ${(unit.secondary_categories || []).map(c => `<span class="secondary-cat">${c}</span>`).join('')}
+            </div>
+            <div class="themes">
+                Keywords: ${themes.map(t => `<span class="theme-tag">${t}</span>`).join('')}
+            </div>
+        </div>
+        `;
+    });
+    
+    container.innerHTML = html;
+}
+
+// Load when ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadUnits);
+} else {
+    loadUnits();
+}
+</script>
+
+</body>
+</html>

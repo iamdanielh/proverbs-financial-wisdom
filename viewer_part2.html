@@ -1,0 +1,149 @@
+        <div id="insights-container"></div>
+        <div id="verses-container"></div>
+    </div>
+    
+    <div class="footer">
+        <p>Generated from Proverbs thematic analysis • 915 verses • 12 financial categories</p>
+    </div>
+
+    <script>
+        let bookData = null;
+        let insightsData = null;
+        let currentChapter = 0;
+
+        async function loadData() {
+            const [bookRes, insightsRes] = await Promise.all([
+                fetch('proverbs_book_structure.json'),
+                fetch('proverbs_insights.json')
+            ]);
+            bookData = await bookRes.json();
+            insightsData = await insightsRes.json();
+            renderNav();
+            renderAll();
+        }
+
+        function renderNav() {
+            const nav = document.getElementById('chapter-nav');
+            nav.innerHTML = `<button class="nav-btn active" onclick="showChapter(0)">📊 Overview</button>` +
+                bookData.chapters.map((ch, i) => 
+                    `<button class="nav-btn" onclick="showChapter(${i + 1})">${i + 1}. ${ch.title.split(':')[0]}</button>`
+                ).join('');
+        }
+
+        function renderAll() {
+            renderInsights();
+            renderVerses();
+        }
+
+        function renderInsights() {
+            const container = document.getElementById('insights-container');
+            container.innerHTML = '';
+            
+            if (currentChapter === 0) {
+                // Show all chapters in summary cards
+                insightsData.forEach((ins, i) => {
+                    const card = createInsightCard(ins, i);
+                    container.appendChild(card);
+                });
+            } else {
+                // Show single chapter detailed view
+                const ins = insightsData[currentChapter - 1];
+                const card = createInsightCard(ins, currentChapter - 1, true);
+                container.appendChild(card);
+            }
+        }
+
+        function createInsightCard(ins, index, expanded = false) {
+            const div = document.createElement('div');
+            div.className = 'insight-card';
+            if (!expanded && currentChapter === 0) {
+                div.style.cursor = 'pointer';
+                div.onclick = () => showChapter(index + 1);
+            }
+            
+            div.innerHTML = `
+                <div class="insight-header" style="background: ${ins.color}">
+                    <div class="insight-icon">${ins.icon}</div>
+                    <div class="insight-title">Chapter ${ins.chapter}: ${ins.title}</div>
+                    <div class="insight-headline">${ins.headline}</div>
+                </div>
+                <div class="insight-body">
+                    <div class="insight-summary">${ins.summary}</div>
+                    ${expanded ? `<div class="insight-proverbs" style="border-color: ${ins.color}">
+                        <strong>Proverbs Says:</strong> ${ins.proverbs_says}
+                    </div>` : ''}
+                    <div class="key-points">
+                        ${ins.key_points.map(p => `<span class="key-point">${p}</span>`).join('')}
+                    </div>
+                </div>
+            `;
+            return div;
+        }
+
+        function renderVerses() {
+            const container = document.getElementById('verses-container');
+            const search = document.getElementById('search').value.toLowerCase();
+            
+            container.innerHTML = '';
+            
+            const chaptersToShow = currentChapter === 0 ? bookData.chapters : [bookData.chapters[currentChapter - 1]];
+            
+            chaptersToShow.forEach(ch => {
+                const filtered = ch.sections.filter(sec => {
+                    if (!sec.financial_concepts || sec.financial_concepts.length === 0) return false;
+                    if (!search) return true;
+                    return sec.text.toLowerCase().includes(search) || 
+                           sec.title.toLowerCase().includes(search) ||
+                           sec.range.toLowerCase().includes(search) ||
+                           sec.financial_concepts.some(c => c.toLowerCase().includes(search));
+                });
+                
+                if (filtered.length === 0) return;
+                
+                const section = document.createElement('div');
+                section.className = 'sections-container active';
+                section.innerHTML = `
+                    <h2 style="color: white; margin: 1.5rem 0 1rem; font-size: 1.1rem;">
+                        📜 ${ch.title} <span style="opacity: 0.7;">(${filtered.length} sections)</span>
+                    </h2>
+                    ${filtered.map(sec => `
+                        <div class="section-card">
+                            <div class="section-header">
+                                <span class="section-title">${sec.title}</span>
+                                <span class="verse-range">${sec.range}</span>
+                            </div>
+                            <div class="concepts-bar">
+                                ${sec.financial_concepts.map(c => `<span class="concept-tag">${c}</span>`).join('')}
+                            </div>
+                            <div class="verse-text">${sec.text}</div>
+                            ${sec.summary ? `<div class="verse-summary">💡 ${sec.summary}</div>` : ''}
+                        </div>
+                    `).join('')}
+                `;
+                container.appendChild(section);
+            });
+        }
+
+        function showChapter(num) {
+            currentChapter = num;
+            
+            // Update nav
+            document.querySelectorAll('.nav-btn').forEach((btn, i) => {
+                btn.classList.toggle('active', i === num);
+            });
+            
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            
+            renderAll();
+        }
+
+        document.getElementById('search').addEventListener('input', renderVerses);
+
+        loadData().catch(e => {
+            document.getElementById('insights-container').innerHTML = 
+                '<div style="text-align:center;padding:2rem;color:white">Loading... Please refresh.</div>';
+        });
+    </script>
+</body>
+</html>

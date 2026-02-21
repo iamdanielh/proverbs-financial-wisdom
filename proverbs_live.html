@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proverbs Financial Wisdom</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a237e 0%, #283593 50%, #3949ab 100%);
+            min-height: 100vh; 
+            color: #333;
+        }
+        .header { 
+            background: rgba(0,0,0,0.4); 
+            color: white; 
+            padding: 1.2rem; 
+            text-align: center;
+            position: sticky; 
+            top: 0; 
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+        .header h1 { font-size: 1.3rem; font-weight: 300; }
+        .header h1 span { font-weight: 700; display: block; font-size: 1.1rem; }
+        .nav { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; padding: 1rem; background: rgba(255,255,255,0.05); }
+        .nav-btn { 
+            background: rgba(255,255,255,0.1); 
+            border: 1px solid rgba(255,255,255,0.2);
+            color: white; 
+            padding: 0.5rem 1rem; 
+            border-radius: 20px; 
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+        .nav-btn:hover { background: rgba(255,255,255,0.2); }
+        .nav-btn.active { background: white; color: #1a237e; }
+        .container { max-width: 900px; margin: 0 auto; padding: 1rem; }
+        
+        /* Insight Card */
+        .insight-card { 
+            background: white; 
+            border-radius: 16px; 
+            margin-bottom: 1.5rem; 
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+        .insight-header { 
+            padding: 1.5rem; 
+            color: white;
+        }
+        .insight-icon { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .insight-chapter { font-size: 0.8rem; opacity: 0.9; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.3rem; }
+        .insight-headline { font-size: 1.3rem; font-weight: 700; line-height: 1.3; }
+        .insight-body { padding: 1.5rem; }
+        .insight-summary { font-size: 1rem; line-height: 1.6; color: #444; margin-bottom: 1rem; }
+        .insight-proverbs { 
+            background: #f8f9fa; 
+            border-left: 4px solid; 
+            padding: 1rem; 
+            margin-bottom: 1rem;
+            font-style: italic;
+            border-radius: 0 8px 8px 0;
+        }
+        .key-points { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+        .key-point { 
+            background: #f0f4f8; 
+            padding: 0.4rem 0.8rem; 
+            border-radius: 15px; 
+            font-size: 0.85rem;
+            color: #555;
+        }
+        
+        /* Verse Sections */
+        .verse-section { 
+            background: white; 
+            border-radius: 12px; 
+            margin-bottom: 1rem; 
+            padding: 1.2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+        .verse-header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            margin-bottom: 0.8rem;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .verse-title { font-weight: 600; color: #1a237e; font-size: 1rem; }
+        .verse-range { 
+            background: #e8eaf6; 
+            padding: 0.3rem 0.6rem; 
+            border-radius: 12px; 
+            font-size: 0.8rem;
+            color: #3949ab;
+        }
+        .verse-text { 
+            font-size: 1rem; 
+            line-height: 1.7; 
+            color: #333; 
+            margin-bottom: 0.8rem;
+        }
+        .verse-concepts { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+        .concept-tag { 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white; 
+            padding: 0.3rem 0.7rem; 
+            border-radius: 12px; 
+            font-size: 0.75rem;
+        }
+        
+        .search-box { 
+            width: 100%; 
+            padding: 1rem; 
+            border: none; 
+            border-radius: 12px; 
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            background: rgba(255,255,255,0.95);
+        }
+        .loading { text-align: center; padding: 3rem; color: white; }
+        .footer { text-align: center; padding: 2rem; color: rgba(255,255,255,0.7); font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📖 Proverbs <span>Financial Wisdom Explorer</span></h1>
+    </div>
+    
+    <div class="nav" id="chapterNav"></div>
+    
+    <div class="container">
+        <input type="text" class="search-box" id="search" placeholder="🔍 Search verses, topics, or concepts...">
+        <div id="content">
+            <div class="loading">Loading Proverbs...</div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>12 Chapters • Financial Wisdom from Ancient Texts</p>
+    </div>
+
+    <script>
+        // Embedded insights data
+        const insightsData = [
+            { chapter: 1, headline: "Wealth needs roots before it bears fruit", summary: "The fear of Yahweh is the beginning—not destination—of financial wisdom. Without this foundation, profit is a house on sand.", key_points: ["Wisdom > Money", "Character is Capital", "Foundation First"], proverbs_says: "Before counting money, learn to fear God. Proverbs' first lesson: foundation matters more than cash flow.", color: "#1a237e", icon: "🏛️" },
+            { chapter: 2, headline: "Treat labor like treasure—seek it that way", summary: "Seek wisdom as silver, search as hidden treasure. The mental model: wisdom = active pursuit = capital. Not passive.", key_points: ["Diligence = Abundance", "Active Work", "Sow to Reap"], proverbs_says: "You don't get wealthy; you get wisdom, and wisdom generates wealth. The search is active.", color: "#00695c", icon: "⚒️" },
+            { chapter: 3, headline: "Inaction compounds poverty", summary: "Folded hands create debt as reliably as open hands create wealth. Poverty accumulates through neglect, not strikes.", key_points: ["Motion > Stillness", "Avoid Folds", "Wake Up"], proverbs_says: "Laziness mortgages your future for present ease. Poverty is behavioral failure with financial consequences.", color: "#c62828", icon: "💤" },
+            { chapter: 4, headline: "Shortcuts destroy wisdom", summary: "Counsel is more valuable than silver. Strategic planning precedes success. The wise consult; fools rush.", key_points: ["Consult Widely", "Think Ahead", "Advice is Asset"], proverbs_says: "Financial planning isn't lonely spreadsheet work—it's communal wisdom. Your budget needs peer review.", color: "#455a64", icon: "🪶" },
+            { chapter: 5, headline: "Hurry makes holes in pockets", summary: "Wealth from gambling or quick gain is temporary. The one who hastens to be rich will not go unpunished.", key_points: ["Patience > Speed", "Greed Self-Destructs", "Sustainable > Fast"], proverbs_says: "Speed is the enemy of sustainability. Don't get rich fast—the tortoise beats the hare in finance too.", color: "#e65100", icon: "⚡" },
+            { chapter: 6, headline: "Never sign what you can't pay", summary: "Debt is a snare. Co-signing is explicitly warned. The borrower becomes servant to the lender. Free yourself.", key_points: ["Debt = Bondage", "Avoid Surety", "Escape Early"], proverbs_says: "Co-signing guarantees another's irresponsibility. Your signature enslaves you to their choices.", color: "#b71c1c", icon: "⛓️" },
+            { chapter: 7, headline: "Give first, receive more", summary

@@ -1,0 +1,21 @@
+{
+  "lastChecks": {
+    "moltbook_dm": 1740077227,
+    "moltbook_feed": 1740077227,
+    "moltbook_interactions": 1740077227
+  },
+  "checkHistory": [
+    {
+      "timestamp": 1739999340,
+      "type": "moltbook_dm",
+      "result": "No new activity",
+      "messagesUnread": 0
+    },
+    {
+      "timestamp": 1740077227,
+      "type": "moltbook_dm",
+      "result": "No new activity",
+      "messagesUnread": 0
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "sonoscli": {
+      "version": "1.0.0",
+      "installedAt": 1771517955068
+    },
+    "desearch-web-search": {
+      "version": "1.0.1",
+      "installedAt": 1771638688291
+    },
+    "github": {
+      "version": "1.0.0",
+      "installedAt": 1771638693072
+    }
+  }
+}

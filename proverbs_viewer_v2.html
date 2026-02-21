@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proverbs Financial Wisdom - Interactive</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a237e 0%, #283593 50%, #3949ab 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        
+        .header {
+            background: rgba(0,0,0,0.3);
+            backdrop-filter: blur(10px);
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .header h1 { margin: 0; font-size: 1.4rem; font-weight: 300; }
+        .header h1 span { font-weight: 600; display: block; font-size: 1.1rem; margin-top: 0.3rem; }
+        .header p { margin: 0.5rem 0 0; font-size: 0.85rem; opacity: 0.9; }
+        
+        .container { max-width: 900px; margin: 0 auto; padding: 1rem; }
+        
+        /* Insight Cards */
+        .insight-card {
+            background: white;
+            border-radius: 16px;
+            margin-bottom: 1.5rem;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .insight-card:hover { transform: translateY(-2px); box-shadow: 0 15px 50px rgba(0,0,0,0.4); }
+        
+        .insight-header {
+            padding: 1.5rem;
+            color: white;
+            position: relative;
+        }
+        
+        .insight-header::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            right: 0;
+            height: 40px;
+            background: inherit;
+            transform: skewY(-2deg);
+        }
+        
+        .insight-icon { font-size: 3rem; margin-bottom: 0.5rem; }
+        .insight-headline { font-size: 1.4rem; font-weight: 700; line-height: 1.3; margin-bottom: 0.5rem; }
+        .insight-title { font-size: 0.85rem; opacity: 0.9; text-transform: uppercase; letter-spacing: 1px; }
+        
+        .insight-body {
+            padding: 2rem 1.5rem 1.5rem;
+            background: white;
+        }
+        
+        .insight-summary {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #444;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .insight-proverbs {
+            background: #f8f9fa;
+            border-left: 4px solid;
+            padding: 1rem 1.2rem;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+            color: #555;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .key-points {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .key-point {
+            background: #f0f4f8;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: #555;
+            font-weight: 500;
+        }
+        
+        /* Navigation */
+        .nav-container {
+            background: rgba(255,255,255,0.95);
+            border-radius: 12px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            position: sticky;
+            top: 80px;
+            z-index: 90;
+        }
+        
+        .nav-scroll {
+            display: flex;
+            gap: 0.5rem;
+            overflow-x: auto;
+            padding-bottom: 0.5rem;
+            scrollbar-width: none;
+        }
+        
+        .nav-scroll::-webkit-scrollbar { display: none; }
+        
+        .nav-btn {
+            background: transparent;
+            border: 2px solid #1a237e;
+            color: #1a237e;
+            padding: 0.6rem 1rem;
+            border-radius: 25px;
+            white-space: nowrap;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-weight: 500;
+        }
+        
+        .nav-btn:hover { background: #1a237e; color: white; }
+        .nav-btn.active { background: #1a237e; color: white; }
+        
+        /* Search */
+        .search-container {
+            margin-bottom: 1rem;
+        }
+        
+        .search-box {
+            width: 100%;
+            padding: 1rem 1.2rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 30px;
+            font-size: 1rem;
+            background: white;
+            transition: border-color 0.2s;
+        }
+        
+        .search-box:focus { outline: none; border-color: #1a237e; }
+        
+        /* Verse Sections */
+        .sections-container { display: none; }
+        .sections-container.active { display: block; }
+        
+        .section-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.2rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-left: 4px solid #1a237e;
+        }
+        
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.8rem;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .section-title { font-weight: 600; font-size: 1rem; color: #1a237e; }
+        
+        .verse-range {
+            background: #1a237e;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .concepts-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            margin-bottom: 0.8rem;
+        }
+        <div id="insights-container"></div>
+        <div id="verses-container"></div>
+    </div>
+    
+    <div class="footer">
+        <p>Generated from Proverbs thematic analysis • 915 verses • 12 financial categories</p>
+    </div>
+
+    <script>
+        let bookData = null;
+        let insightsData = null;
+        let currentChapter = 0;
+
+        async function loadData() {
+            const [bookRes, insightsRes] = await Promise.all([
+                fetch('proverbs_book_structure.json'),
+                fetch('proverbs_insights.json')
+            ]);
+            bookData = await bookRes.json();
+            insightsData = await insightsRes.json();
+            renderNav();
+            renderAll();
+        }
+
+        function renderNav() {
+            const nav = document.getElementById('chapter-nav');
+            nav.innerHTML = `<button class="nav-btn active" onclick="showChapter(0)">📊 Overview</button>` +
+                bookData.chapters.map((ch, i) => 
+                    `<button class="nav-btn" onclick="showChapter(${i + 1})">${i + 1}. ${ch.title.split(':')[0]}</button>`
+                ).join('');
+        }
+
+        function renderAll() {
+            renderInsights();
+            renderVerses();
+        }
+
+        function renderInsights() {
+            const container = document.getElementById('insights-container');
+            container.innerHTML = '';
+            
+            if (currentChapter === 0) {
+                // Show all chapters in summary cards
+                insightsData.forEach((ins, i) => {
+                    const card = createInsightCard(ins, i);
+                    container.appendChild(card);
+                });
+            } else {
+                // Show single chapter detailed view
+                const ins = insightsData[currentChapter - 1];
+                const card = createInsightCard(ins, currentChapter - 1, true);
+                container.appendChild(card);
+            }
+        }
+
+        function createInsightCard(ins, index, expanded = false) {
+            const div = document.createElement('div');
+            div.className = 'insight-card';
+            if (!expanded && currentChapter === 0) {
+                div.style.cursor = 'pointer';
+                div.onclick = () => showChapter(index + 1);
+            }
+            
+            div.innerHTML = `
+                <div class="insight-header" style="background: ${ins.color}">
+                    <div class="insight-icon">${ins.icon}</div>
+                    <div class="insight-title">Chapter ${ins.chapter}: Financial Wisdom</div>
+                    <div class="insight-headline">${ins.headline}</div>
+                </div>
+                <div class="insight-body">
+                    <div class="insight-summary">${ins.summary}</div>
+                    ${expanded ? `<div class="insight-proverbs" style="border-color: ${ins.color}">
+                        <strong>Proverbs Says:</strong> ${ins.proverbs_says}
+                    </div>` : ''}
+                    <div class="key-points">
+                        ${ins.key_points.map(p => `<span class="key-point">${p}</span>`).join('')}
+                    </div>
+                </div>
+            `;
+            return div;
+        }
+
+        function renderVerses() {
+            const container = document.getElementById('verses-container');
+            const search = document.getElementById('search').value.toLowerCase();
+            
+            container.innerHTML = '';
+            
+            const chaptersToShow = currentChapter === 0 ? bookData.chapters : [bookData.chapters[currentChapter - 1]];
+            
+            chaptersToShow.forEach(ch => {
+                const filtered = ch.sections.filter(sec => {
+                    if (!sec.financial_concepts || sec.financial_concepts.length === 0) return false;
+                    if (!search) return true;
+                    return sec.text.toLowerCase().includes(search) || 
+                           sec.title.toLowerCase().includes(search) ||
+                           sec.range.toLowerCase().includes(search) ||
+                           sec.financial_concepts.some(c => c.toLowerCase().includes(search));
+                });
+                
+                if (filtered.length === 0) return;
+                
+                const section = document.createElement('div');
+                section.className = 'sections-container active';
+                section.innerHTML = `
+                    <h2 style="color: white; margin: 1.5rem 0 1rem; font-size: 1.1rem;">
+                        📜 ${ch.title} <span style="opacity: 0.7;">(${filtered.length} sections)</span>
+                    </h2>
+                    ${filtered.map(sec => `
+                        <div class="section-card">
+                            <div class="section-header">
+                                <span class="section-title">${sec.title}</span>
+                                <span class="verse-range">${sec.range}</span>
+                            </div>
+                            <div class="concepts-bar">
+                                ${sec.financial_concepts.map(c => `<span class="concept-tag">${c}</span>`).join('')}
+                            </div>
+                            <div class="verse-text">${sec.text}</div>
+                            ${sec.summary ? `<div class="verse-summary">💡 ${sec.summary}</div>` : ''}
+                        </div>
+                    `).join('')}
+                `;
+                container.appendChild(section);
+            });
+        }
+
+        function showChapter(num) {
+            currentChapter = num;
+            
+            // Update nav
+            document.querySelectorAll('.nav-btn').forEach((btn, i) => {
+                btn.classList.toggle('active', i === num);
+            });
+            
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            
+            renderAll();
+        }
+
+        document.getElementById('search').addEventListener('input', renderVerses);
+
+        loadData().catch(e => {
+            document.getElementById('insights-container').innerHTML = 
+                '<div style="text-align:center;padding:2rem;color:white">Loading... Please refresh.</div>';
+        });
+    </script>
+</body>
+</html>
