@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proverbs Financial Wisdom - 12 Chapters</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);min-height:100vh;color:#e0e0e0;line-height:1.6}
+.header{text-align:center;padding:40px 20px;background:rgba(0,0,0,0.3);border-bottom:1px solid rgba(255,255,255,0.1)}
+.header h1{font-size:2.5rem;background:linear-gradient(90deg,#ffd700,#ff6b6b,#4ecdc4);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.subtitle{color:#888;margin-top:10px;font-size:1.1rem}
+.toc{background:rgba(0,0,0,0.2);padding:20px;margin:20px;border-radius:15px}
+.toc h2{color:#4ecdc4;margin-bottom:15px}
+.toc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}
+.toc-item{background:rgba(255,255,255,0.05);padding:15px;border-radius:10px;cursor:pointer;transition:all 0.3s;border:1px solid rgba(255,255,255,0.1)}
+.toc-item:hover{background:rgba(102,126,234,0.3);border-color:#667eea}
+.toc-number{color:#ffd700;font-weight:bold;font-size:1.2rem}
+.toc-title{font-size:0.95rem;margin-top:5px}
+.toc-count{color:#888;font-size:0.8rem}
+.content{max-width:1400px;margin:0 auto;padding:30px}
+.book-chapter{background:rgba(255,255,255,0.05);border-radius:20px;padding:30px;margin-bottom:40px;border:2px solid rgba(102,126,234,0.3)}
+.book-chapter-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;border-bottom:2px solid rgba(255,255,255,0.1);padding-bottom:15px}
+.book-number{background:linear-gradient(135deg,#667eea,#764ba2);color:white;padding:10px 25px;border-radius:10px;font-size:1.5rem;font-weight:bold}
+.book-title{color:#ffd700;font-size:1.4rem}
+.book-count{color:#4ecdc4;font-size:0.9rem}
+.proverb-card{background:rgba(0,0,0,0.3);border-radius:15px;padding:25px;margin:20px 0;border-left:4px solid #667eea}
+.proverb-header{display:flex;gap:15px;margin-bottom:15px;flex-wrap:wrap}
+.biblical-ref{background:rgba(102,126,234,0.3);color:#fff;padding:5px 15px;border-radius:20px;font-size:0.85rem}
+.proverb-text{font-style:italic;color:#ddd;margin:15px 0;line-height:1.8;padding:20px;background:rgba(0,0,0,0.2);border-radius:10px}
+.section{margin-top:20px}
+.section-title{color:#4ecdc4;text-transform:uppercase;font-size:0.85rem;margin-bottom:10px}
+.section-content{margin-left:20px;color:#bbb}
+.section-content li{margin:12px 0;padding-left:25px;position:relative;list-style:none}
+.section-content li:before{content:"→";position:absolute;left:0;color:#667eea;font-weight:bold}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}
+.tag{background:rgba(78,205,196,0.2);color:#4ecdc4;padding:6px 12px;border-radius:15px;font-size:0.8rem}
+.sources{display:flex;gap:8px;margin-top:15px}
+.source{padding:4px 10px;border-radius:12px;font-size:0.75rem}
+.source.chatgpt{background:rgba(16,163,127,0.3);color:#10a37f}
+.source.gemini{background:rgba(66,133,244,0.3);color:#4285f4}
+.source.grok{background:rgba(239,68,68,0.3);color:#ef4444}
+.nav-top{position:fixed;bottom:20px;right:20px;background:linear-gradient(135deg,#667eea,#764ba2);color:white;padding:15px 20px;border-radius:10px;cursor:pointer;z-index:1000;font-weight:bold}
+</style>
+</head>
+<body>
+<div class="header">
+<h1>📖 Proverbs Financial Wisdom</h1>
+<p class="subtitle">12 Book Chapters • 61 Wisdom Units Organized Thematically</p>
+</div>
+
+<div class="toc" id="toc">
+<h2>📑 Table of Contents</h2>
+<div class="toc-grid">
+<div class="toc-item" onclick="document.getElementById('chap1').scrollIntoView({behavior:'smooth'})">
+<div class="toc-number">Chapter 1</div>
+<div class="toc-title">Beyond Money: What True Wealth Really Means</div>
+<div class="toc-count">4 proverbs</div>
+</div><div class="toc-item" onclick="document.getElementById('chap2').scrollIntoView({behavior:'smooth'})">
+<div class="toc-number">Chapter 2</div>
+<div class="toc-title">Breaking Free from Debt: Avoiding the Borrower's Trap</div>
+<div class="toc-count">5 proverbs</div>
+</div><div class="toc-item" onclick="document.getElementById('chap3').scrollIntoView({behavior:'smooth'})">
+<div class="toc-number">Chapter 3</div>
+<div class="toc-title">Contentment Over Consumption: Living Within Your Means</div>
+<div class="toc-count">4 proverbs</div>
+</div><div class="toc-item" onclick="document.getElementById('chap4').scrollIntoView({behavior:'smooth'})">
+<div class="toc-number">Chapter 4</div>
+<div class="toc-title">Growing Your Wealth Slowly: The Path to Enduring Prosperity</div>
+<div class="toc-count">6 proverbs</div>
+</div><div class="toc-item" onclick="document.getElementById('chap5').scrollIntoView({behavior:'smooth'})">
+<div class="toc-number">Chapter 5</div>
+<div class="toc-title">Guarding Your Gains: Navigating Financial Pitfalls</div>
+<div class="toc-count">4 proverbs</div>
+</div><div class="toc-item" onclick="document.getElementById('chap6').scrollIntoView({behavior:'smooth'})">
+<div class="toc-number">Chapter 6</div>
+<div class="toc-title">Invest in Yourself: Wisdom as Your Greatest Asset</div>
+<div class="toc-count">3 proverbs</div>
+</div><div class="toc-item" onclick="document.getElementById('chap7').scrollIntoView({behavior:'smooth'})">
+<div class="toc-number">Chapter 7</div>
+<div class="toc-title">Passing It On: Building a Family Legacy</div>
+<div class="toc-count">2 proverbs</div>
+</div><div class="toc-item" onclick="document.getElementById('chap8').scrollIntoView({behavior:'smooth'})">
+<div class="toc-number">Chapter 8</div>
+<div class="toc-title">Steward Your Resources: Active Management for Success</div>
+<div class="toc-count">7 proverbs</div>
+</div><div class="toc-item" onclick="document.getElementById('chap9').scrollIntoView({behavior:'smooth'})">
+<div class="toc-number">Chapter 9</div>
+<div class="toc-title">The Ant's Wisdom: Saving for Tomorrow's Storms</div>
+<div class="toc-count">4 proverbs</div>
+</div><div class="toc-item" onclick="document.getElementById('chap10').scrollIntoView({behavior:'smooth'})">
+<div class="toc-number">Chapter 10</div>
+<div class="toc-title">The Blessing of Giving: Wealth That Multiplies</div>
+<div class="toc-count">5 proverbs</div>
+</div><div class="toc-item" onclick="document.getElementById('chap11').scrollIntoView({behavior:'smooth'})">
+<div class="toc-number">Chapter 11</div>
+<div class="toc-title">The Foundation of True Riches: Building Wealth with Honor</div>
+<div class="toc-count">10 proverbs</div>
+</div><div class="toc-item" onclick="document.getElementById('chap12').scrollIntoView({behavior:'smooth'})">
+<div class="toc-number">Chapter 12</div>
+<div class="toc-title">The Power of Hard Work: From Laziness to Leadership</div>
+<div class="toc-count">7 proverbs</div>
+</div></div>
+</div>
+
+<div class="content">
+<div class="book-chapter" id="chap1">
+<div class="book-chapter-header">
+<div class="book-number">1</div>
+<div>
+<div class="book-title">Beyond Money: What True Wealth Really Means</div>
+<div class="book-count">4 Proverbs sourced</div>
+</div>
+</div>
+<div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 10:22</span>
+</div>
+<div class="proverb-text">"The blessing of the Lord brings wealth, without painful toil for it."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>True wealth includes peace and integrity.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Pursue ethical, low-stress wealth strategies.</li><li>Align financial success with values and wellbeing.</li></ul></div>
+<div class="tags"><span class="tag">Wealth Perspective & Ultimate Priorities</span></div>
+<div class="sources"><span class="source chatgpt">chatgpt</span><span class="source grok">grok</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 11:4</span>
+</div>
+<div class="proverb-text">"Wealth is worthless in the day of wrath, but righteousness delivers from death."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Wealth alone cannot protect against ultimate or systemic risks.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Diversify life priorities beyond money—include insurance, legal planning, and moral decision-making.</li></ul></div>
+<div class="tags"><span class="tag">Risk Management & Prudence</span><span class="tag">Wealth Perspective & Ultimate Priorities</span></div>
+<div class="sources"><span class="source chatgpt">chatgpt</span><span class="source grok">grok</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 23:4-5</span>
+</div>
+<div class="proverb-text">"Do not wear yourself out to get rich; do not trust your own cleverness. Cast but a glance at riches, and they are gone, for they will surely sprout wings and fly off to the sky like an eagle."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Excessive striving for wealth is futile, as riches are transient and unreliable.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Market downturns, inflation shocks, or corporate failures can wipe out gains; prioritize health, relationships, and ethical living.</li></ul></div>
+<div class="tags"><span class="tag">Wealth Perspective & Ultimate Priorities</span><span class="tag">Risk Management & Prudence</span></div>
+<div class="sources"><span class="source chatgpt">chatgpt</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 31:10-11</span>
+</div>
+<div class="proverb-text">"A wife of noble character who can find? She is worth far more than rubies. Her husband has full confidence in her and lacks nothing of value."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Noble character and trust generate value superior to material wealth.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Cultivate integrity and trust in partners or associates to generate stability and shared opportunities, surpassing mere asset accumulation.</li></ul></div>
+<div class="tags"><span class="tag">Wealth Perspective & Ultimate Priorities</span><span class="tag">Legacy, Family & Multi-Generational Planning</span></div>
+<div class="sources"><span class="source grok">grok</span></div>
+</div></div><div class="book-chapter" id="chap2">
+<div class="book-chapter-header">
+<div class="book-number">2</div>
+<div>
+<div class="book-title">Breaking Free from Debt: Avoiding the Borrower's Trap</div>
+<div class="book-count">5 Proverbs sourced</div>
+</div>
+</div>
+<div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 6:1-5</span>
+</div>
+<div class="proverb-text">"My son, if you have put up security for your neighbor, if you have shaken hands in pledge for a stranger, you have been trapped by what you said, ensnared by the words of your mouth. So do this, my son, to free yourself, since you have fallen into your neighbor's hands: Go—to the point of exhaustion—and free yourself, like a gazelle from the hand of the hunter, like a bird from the snare of the fowler."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Co-signing or guaranteeing another's debt creates dangerous liability.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Avoid co-signing loans.</li><li>Remove yourself from risky financial guarantees immediately.</li></ul></div>
+<div class="tags"><span class="tag">Debt, Guarantees & Liability Risks</span><span class="tag">Risk Management & Prudence</span></div>
+<div class="sources"><span class="source chatgpt">chatgpt</span><span class="source gemini">gemini</span><span class="source grok">grok</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 11:15</span>
+</div>
+<div class="proverb-text">"Whoever puts up security for a stranger will surely suffer, but whoever refuses to shake hands in pledge is safe."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Avoid guaranteeing debts for others, especially unknowns, as it leads to harm; caution protects.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Limit co-signing loans or personal guarantees in your financial plan to preserve credit score and assets.</li></ul></div>
+<div class="tags"><span class="tag">Debt, Guarantees & Liability Risks</span><span class="tag">Risk Management & Prudence</span></div>
+<div class="sources"><span class="source grok">grok</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 20:16</span>
+</div>
+<div class="proverb-text">"Take the garment of one who puts up security for a stranger; hold it in pledge if it is done for an outsider."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>If someone takes on uncompensated, unsecured risk for an unknown entity, demand collateral.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>In modern credit markets, evaluate counterparty risk and require strict collateral.</li></ul></div>
+<div class="tags"><span class="tag">Debt, Guarantees & Liability Risks</span><span class="tag">Risk Management & Prudence</span></div>
+<div class="sources"><span class="source gemini">gemini</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 22:7</span>
+</div>
+<div class="proverb-text">"The rich rule over the poor, and the borrower is slave to the lender."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Debt creates financial dependency and limits freedom.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Minimize consumer debt, avoid high-interest obligations, and prioritize becoming debt-free to retain control over your income.</li></ul></div>
+<div class="tags"><span class="tag">Debt, Guarantees & Liability Risks</span></div>
+<div class="sources"><span class="source chatgpt">chatgpt</span><span class="source gemini">gemini</span><span class="source grok">grok</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 22:26-27</span>
+</div>
+<div class="proverb-text">"Do not be one who shakes hands in pledge or puts up security for debts; if you lack the means to pay, your very bed will be snatched from under you."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Avoid guaranteeing others' debts, as inability to pay can lead to severe personal loss.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Refrain from co-signing loans or providing financial guarantees unless fully prepared for worst-case scenarios.</li></ul></div>
+<div class="tags"><span class="tag">Debt, Guarantees & Liability Risks</span><span class="tag">Risk Management & Prudence</span></div>
+<div class="sources"><span class="source grok">grok</span></div>
+</div></div><div class="book-chapter" id="chap3">
+<div class="book-chapter-header">
+<div class="book-number">3</div>
+<div>
+<div class="book-title">Contentment Over Consumption: Living Within Your Means</div>
+<div class="book-count">4 Proverbs sourced</div>
+</div>
+</div>
+<div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 21:17</span>
+</div>
+<div class="proverb-text">"Whoever loves pleasure will become poor; whoever loves wine and olive oil will never be rich."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Excessive indulgence in luxury consumption erodes wealth.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Control discretionary spending on entertainment, dining, and luxury goods. Avoid lifestyle creep that undermines savings and investing.</li></ul></div>
+<div class="tags"><span class="tag">Lifestyle, Contentment & Spending Discipline</span></div>
+<div class="sources"><span class="source chatgpt">chatgpt</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 21:17, 20</span>
+</div>
+<div class="proverb-text">"Whoever loves pleasure will become poor; whoever loves wine and olive oil will never be rich. ... The wise store up choice food and olive oil, but fools gulp theirs down."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Consumption destroys capital. The primary difference between those who build wealth and those who do not is the discipline to save rather than consume their entire margin.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Luxury spending—cars, dining, travel, and subscriptions—can expand in lockstep with income, eliminating savings. Sustainable wealth requires maintaining a savings margin.</li></ul></div>
+<div class="tags"><span class="tag">Lifestyle, Contentment & Spending Discipline</span></div>
+<div class="sources"><span class="source gemini">gemini</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 30:8-9</span>
+</div>
+<div class="proverb-text">"Keep falsehood and lies far from me; give me neither poverty nor riches, but give me only my daily bread. Otherwise, I may have too much and disown you and say, ‘Who is the Lord?’ Or I may become poor and steal, and so dishonor the name of my God."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Moderation and sufficiency provide stability and reduce moral and financial risk.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Aim for financial independence and sufficiency rather than extremes of wealth or poverty; a balanced budget prevents burnout or ethical compromises.</li></ul></div>
+<div class="tags"><span class="tag">Lifestyle, Contentment & Spending Discipline</span><span class="tag">Wealth Perspective & Ultimate Priorities</span></div>
+<div class="sources"><span class="source chatgpt">chatgpt</span><span class="source grok">grok</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 30:8–9</span>
+</div>
+<div class="proverb-text">"Keep falsehood and lies far from me; give me neither poverty nor riches, but give me only my daily bread. Otherwise, I may have too much and disown you and say, ‘Who is the Lord?’ Or I may become poor and steal, and so dishonor the name of my God."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Define a sufficient level of wealth; extremes of poverty and excess both create moral and psychological risk.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Establish a clear retirement target and sustainable withdrawal rate. Financial independence is achieved by meeting defined needs, not endless accumulation.</li></ul></div>
+<div class="tags"><span class="tag">Lifestyle, Contentment & Spending Discipline</span></div>
+<div class="sources"><span class="source gemini">gemini</span></div>
+</div></div><div class="book-chapter" id="chap4">
+<div class="book-chapter-header">
+<div class="book-number">4</div>
+<div>
+<div class="book-title">Growing Your Wealth Slowly: The Path to Enduring Prosperity</div>
+<div class="book-count">6 Proverbs sourced</div>
+</div>
+</div>
+<div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 8:10-11,18-21</span>
+</div>
+<div class="proverb-text">"Choose my instruction instead of silver, knowledge rather than choice gold, for wisdom is more precious than rubies, and nothing you desire can compare with her. [...] With me are riches and honor, enduring wealth and prosperity. My fruit is better than fine gold; what I yield surpasses choice silver. I walk in the way of righteousness, along the paths of justice, bestowing a rich inheritance on those who love me and making their treasuries full."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Intellectual and moral capital outweigh monetary assets.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Prioritize learning over chasing income.</li><li>Invest in skills and education.</li></ul></div>
+<div class="tags"><span class="tag">Wisdom, Knowledge & Human Capital</span><span class="tag">Wealth Building & Investing</span></div>
+<div class="sources"><span class="source chatgpt">chatgpt</span><span class="source gemini">gemini</span><span class="source grok">grok</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 13:11</span>
+</div>
+<div class="proverb-text">"Dishonest money dwindles away, but whoever gathers money little by little makes it grow."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Wealth built slowly and honestly is more durable than quick gains.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Prefer long-term investing, disciplined saving, and steady business growth over speculation.</li></ul></div>
+<div class="tags"><span class="tag">Wealth Building & Investing</span><span class="tag">Integrity & Ethical Wealth</span></div>
+<div class="sources"><span class="source chatgpt">chatgpt</span><span class="source grok">grok</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 22:4</span>
+</div>
+<div class="proverb-text">"Humility is the fear of the Lord; its wages are riches and honor and life."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Humility combined with reverence for God yields riches, honor, and life.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Approach career and investments with humility and ethical caution rather than arrogance; this fosters sustainable growth and protection from overconfidence.</li></ul></div>
+<div class="tags"><span class="tag">Wealth Building & Investing</span><span class="tag">Wealth Perspective & Ultimate Priorities</span></div>
+<div class="sources"><span class="source grok">grok</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 31:10-18</span>
+</div>
+<div class="proverb-text">"A wife of noble character who can find? She is worth far more than rubies. Her husband has full confidence in her and lacks nothing of value. She brings him good, not harm, all the days of her life. She selects wool and flax and works with eager hands. She is like the merchant ships, bringing her food from afar. She gets up while it is still night; she provides food for her family and portions for her female servants. She considers a field and buys it; out of her earnings she plants a vineyard. She sets about her work vigorously; her arms are strong for her tasks. She sees that her trading is profitable, and her lamp does not go out at night."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Diligent, entrepreneurial stewardship builds and multiplies household wealth.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Develop multiple income streams, invest in assets (real estate, business ventures), and manage household finances with discipline and initiative.</li></ul></div>
+<div class="tags"><span class="tag">Wealth Building & Investing</span><span class="tag">Diligence, Work & Productivity</span></div>
+<div class="sources"><span class="source chatgpt">chatgpt</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 31:16</span>
+</div>
+<div class="proverb-text">"She considers a field and buys it; out of her earnings she plants a vineyard."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Carefully evaluate before investing earnings in productive assets that generate future returns.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Perform due diligence before buying real estate or stocks; reinvest profits into income-producing assets like index funds or rental properties.</li></ul></div>
+<div class="tags"><span class="tag">Wealth Building & Investing</span></div>
+<div class="sources"><span class="source grok">grok</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 31:24</span>
+</div>
+<div class="proverb-text">"She makes linen garments and sells them, and supplies the merchants with sashes."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Active production and sales generate sustainable income and expand to larger markets.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Develop side businesses or e-commerce; turn skills into sellable products (freelance, digital manufacturing) to diversify income streams.</li></ul></div>
+<div class="tags"><span class="tag">Wealth Building & Investing</span></div>
+<div class="sources"><span class="source grok">grok</span></div>
+</div></div><div class="book-chapter" id="chap5">
+<div class="book-chapter-header">
+<div class="book-number">5</div>
+<div>
+<div class="book-title">Guarding Your Gains: Navigating Financial Pitfalls</div>
+<div class="book-count">4 Proverbs sourced</div>
+</div>
+</div>
+<div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 5:8-14</span>
+</div>
+<div class="proverb-text">"Keep to a path far from her, do not go near the door of her house, lest you lose your honor to others and your dignity to cruel men, lest strangers feast on your wealth and your toil enrich the house of another, at the end of your life you will groan, when your flesh and body are spent. You will say, 'How I hated discipline! How my heart spurned correction! I would not obey my teachers or turn my ear to my instructors. And I was soon in serious trouble in the assembly of God's people.'"</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Avoid immoral relationships that can lead to the loss of accumulated wealth.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Maintain ethical personal conduct to avoid divorce, legal disputes, or financial loss.</li></ul></div>
+<div class="tags"><span class="tag">Saving, Preparation & Emergency Readiness</span><span class="tag">Risk Management & Prudence</span></div>
+<div class="sources"><span class="source grok">grok</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 11:28</span>
+</div>
+<div class="proverb-text">"Those who trust in their riches will fall, but the righteous will thrive like a green leaf."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Relying solely on wealth leads to downfall; righteousness ensures stability.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Do not over-leverage or place undue confidence in portfolio value; diversify assets and maintain ethical integrity.</li></ul></div>
+<div class="tags"><span class="tag">Risk Management & Prudence</span></div>
+<div class="sources"><span class="source grok">grok</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 18:11</span>
+</div>
+<div class="proverb-text">"The wealth of the rich is their fortified city; they imagine it a wall too high to scale."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Wealth can create perceived security but may lead to overconfidence.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Avoid overreliance on assets alone; maintain diversification, risk planning, and humility.</li></ul></div>
+<div class="tags"><span class="tag">Risk Management & Prudence</span></div>
+<div class="sources"><span class="source chatgpt">chatgpt</span><span class="source gemini">gemini</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 20:21</span>
+</div>
+<div class="proverb-text">"An inheritance claimed too soon will not be blessed at the end."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Wealth acquired too quickly, without character and literacy, destroys the beneficiary.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Park sudden windfalls in safe accounts for 6–12 months before allocating.</li></ul></div>
+<div class="tags"><span class="tag">Risk Management & Prudence</span></div>
+<div class="sources"><span class="source gemini">gemini</span></div>
+</div></div><div class="book-chapter" id="chap6">
+<div class="book-chapter-header">
+<div class="book-number">6</div>
+<div>
+<div class="book-title">Invest in Yourself: Wisdom as Your Greatest Asset</div>
+<div class="book-count">3 Proverbs sourced</div>
+</div>
+</div>
+<div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 2:1-11</span>
+</div>
+<div class="proverb-text">"My son, if you accept my words and store up my commands within you, turning your ear to wisdom and applying your heart to understanding—indeed, if you call out for insight and cry aloud for understanding, and if you look for it as for silver and search for it as for hidden treasure, then you will understand the fear of the Lord and find the knowledge of God. For the Lord gives wisdom; from his mouth come knowledge and understanding. He holds success in store for the upright, he is a shield to those whose walk is blameless, for he guards the course of the just and protects the way of his faithful ones."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Diligently pursuing knowledge and wisdom yields long-term protection and prosperity.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Invest in education, financial literacy, and skill-building.</li></ul></div>
+<div class="tags"><span class="tag">Wisdom, Knowledge & Human Capital</span></div>
+<div class="sources"><span class="source chatgpt">chatgpt</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 3:13-18</span>
+</div>
+<div class="proverb-text">"Blessed are those who find wisdom, those who gain understanding, for she is more profitable than silver and yields better returns than gold. She is more precious than rubies; nothing you desire can compare with her. Long life is in her right hand; in her left hand are riches and honor. Her ways are pleasant ways, and all her paths are peace. She is a tree of life to those who take hold of her; those who hold her fast will be blessed."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Wisdom produces returns greater than material wealth alone.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Prioritize decision-making frameworks, mentorship, and strategic thinking.</li><li>Invest in education, certifications, and financial literacy.</li></ul></div>
+<div class="tags"><span class="tag">Wisdom, Knowledge & Human Capital</span><span class="tag">Wealth Building & Investing</span></div>
+<div class="sources"><span class="source chatgpt">chatgpt</span><span class="source grok">grok</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 17:16</span>
+</div>
+<div class="proverb-text">"Why should fools have money in hand to buy wisdom when they are not able to understand it?"</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Spending money without commitment to apply knowledge yields no return.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Ensure that money spent on education, courses, or training is matched by discipline and application.</li></ul></div>
+<div class="tags"><span class="tag">Wisdom, Knowledge & Human Capital</span></div>
+<div class="sources"><span class="source chatgpt">chatgpt</span></div>
+</div></div><div class="book-chapter" id="chap7">
+<div class="book-chapter-header">
+<div class="book-number">7</div>
+<div>
+<div class="book-title">Passing It On: Building a Family Legacy</div>
+<div class="book-count">2 Proverbs sourced</div>
+</div>
+</div>
+<div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 19:14</span>
+</div>
+<div class="proverb-text">"Houses and wealth are inherited from parents, but a prudent wife is from the Lord."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Family structure and partnership significantly affect financial stability.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Choose financially aligned partners and cultivate shared financial values.</li></ul></div>
+<div class="tags"><span class="tag">Legacy, Family & Multi-Generational Planning</span></div>
+<div class="sources"><span class="source chatgpt">chatgpt</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 22:1</span>
+</div>
+<div class="proverb-text">"A good name is more desirable than great riches; to be esteemed is better than silver or gold."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>A strong, honorable reputation holds greater value than material wealth.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Prioritize integrity in business, investing, and career dealings over short-term financial gains; a solid credit history and ethical track record provide long-term security.</li></ul></div>
+<div class="tags"><span class="tag">Legacy, Family & Multi-Generational Planning</span><span class="tag">Integrity & Ethical Wealth</span></div>
+<div class="sources"><span class="source chatgpt">chatgpt</span><span class="source grok">grok</span></div>
+</div></div><div class="book-chapter" id="chap8">
+<div class="book-chapter-header">
+<div class="book-number">8</div>
+<div>
+<div class="book-title">Steward Your Resources: Active Management for Success</div>
+<div class="book-count">7 Proverbs sourced</div>
+</div>
+</div>
+<div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 3:27-28</span>
+</div>
+<div class="proverb-text">"Do not withhold good from those to whom it is due, when it is in your power to act. Do not say to your neighbor, 'Come back tomorrow and I'll give it to you'—when you already have it with you."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Meet financial obligations promptly when you have the ability.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Pay bills, employees, and debts on time.</li><li>Maintain strong credit and vendor relationships.</li></ul></div>
+<div class="tags"><span class="tag">Oversight, Monitoring & Stewardship</span><span class="tag">Integrity & Ethical Wealth</span></div>
+<div class="sources"><span class="source chatgpt">chatgpt</span><span class="source gemini">gemini</span><span class="source grok">grok</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 12:27</span>
+</div>
+<div class="proverb-text">"The lazy do not roast any game, but the diligent feed on the riches of the hunt."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Laziness wastes opportunities; diligence capitalizes on them for provision.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Actively manage and optimize investments (e.g., rebalancing portfolio, pursuing promotions).</li></ul></div>
+<div class="tags"><span class="tag">Diligence, Work & Productivity</span><span class="tag">Oversight, Monitoring & Stewardship</span></div>
+<div class="sources"><span class="source grok">grok</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 21:5</span>
+</div>
+<div class="proverb-text">"The plans of the diligent lead to profit as surely as haste leads to poverty."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Careful, diligent planning yields gain; impulsive actions cause loss.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Create detailed budgets, long-term investment strategies, and emergency funds.</li></ul></div>
+<div class="tags"><span class="tag">Oversight, Monitoring & Stewardship</span><span class="tag">Diligence, Work & Productivity</span></div>
+<div class="sources"><span class="source grok">grok</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 21:5</span>
+</div>
+<div class="proverb-text">"The plans of the diligent lead to profit as surely as haste leads to poverty."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Careful planning and diligence produce abundance; impulsiveness leads to lack.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Create structured financial plans, budgets, and investment strategies. Avoid impulsive purchases or speculative decisions that erode capital.</li></ul></div>
+<div class="tags"><span class="tag">Oversight, Monitoring & Stewardship</span><span class="tag">Diligence, Work & Productivity</span></div>
+<div class="sources"><span class="source chatgpt">chatgpt</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 31:16, 18</span>
+</div>
+<div class="proverb-text">"She considers a field and buys it; out of her earnings she plants a vineyard. ... She sees that her trading is profitable, and her lamp does not go out at night."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Successful investing combines due diligence, active management, and reinvestment of profits to compound returns.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Evaluate investments carefully, improve productivity through management, and reinvest cash flow to expand value.</li></ul></div>
+<div class="tags"><span class="tag">Wealth Building & Investing</span><span class="tag">Oversight, Monitoring & Stewardship</span></div>
+<div class="sources"><span class="source gemini">gemini</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 31:17-18</span>
+</div>
+<div class="proverb-text">"She sets about her work vigorously; her arms are strong for her tasks. She sees that her trading is profitable, and her lamp does not go out at night."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Energetic work combined with constant monitoring ensures profitable transactions.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Maintain active vigilance over investments (rebalancing, fee reviews); dedicate extra time when needed to optimize returns.</li></ul></div>
+<div class="tags"><span class="tag">Oversight, Monitoring & Stewardship</span><span class="tag">Diligence, Work & Productivity</span></div>
+<div class="sources"><span class="source grok">grok</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 31:27</span>
+</div>
+<div class="proverb-text">"She watches over the affairs of her household and does not eat the bread of idleness."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Constant vigilance over economic affairs prevents idleness and loss.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Regularly monitor personal finances (tracking apps, monthly reviews); proactive management prevents unexpected debt and maximizes budget efficiency.</li></ul></div>
+<div class="tags"><span class="tag">Oversight, Monitoring & Stewardship</span></div>
+<div class="sources"><span class="source grok">grok</span></div>
+</div></div><div class="book-chapter" id="chap9">
+<div class="book-chapter-header">
+<div class="book-number">9</div>
+<div>
+<div class="book-title">The Ant's Wisdom: Saving for Tomorrow's Storms</div>
+<div class="book-count">4 Proverbs sourced</div>
+</div>
+</div>
+<div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 6:6-11</span>
+</div>
+<div class="proverb-text">"Go to the ant, you sluggard; consider its ways and be wise! It has no commander, no overseer or ruler, yet it stores its provisions in summer and gathers its food at harvest. How long will you lie there, you sluggard? When will you get up from your sleep? A little sleep, a little slumber, a little folding of the hands to rest—and poverty will come on you like a thief and scarcity like an armed man."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Consistent diligence and preparation prevent poverty.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Build emergency funds and save consistently.</li><li>Maintain 3–6 months emergency reserves.</li></ul></div>
+<div class="tags"><span class="tag">Saving, Preparation & Emergency Readiness</span><span class="tag">Diligence, Work & Productivity</span></div>
+<div class="sources"><span class="source chatgpt">chatgpt</span><span class="source gemini">gemini</span><span class="source grok">grok</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 10:15</span>
+</div>
+<div class="proverb-text">"The wealth of the rich is their fortified city, but poverty is the ruin of the poor."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Wealth provides protection against shocks.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Build a strong balance sheet.</li><li>Maintain liquidity, insurance, and reserves.</li></ul></div>
+<div class="tags"><span class="tag">Saving, Preparation & Emergency Readiness</span></div>
+<div class="sources"><span class="source gemini">gemini</span><span class="source grok">grok</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 21:20</span>
+</div>
+<div class="proverb-text">"The wise store up choice food and olive oil, but fools gulp theirs down."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>The wise store and preserve resources; the foolish consume everything.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Maintain savings accounts, emergency funds, and long-term investments rather than exhausting all income through consumption.</li></ul></div>
+<div class="tags"><span class="tag">Saving, Preparation & Emergency Readiness</span></div>
+<div class="sources"><span class="source chatgpt">chatgpt</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 31:21-22</span>
+</div>
+<div class="proverb-text">"When it snows, she has no fear for her household; for all of them are clothed in scarlet. She makes coverings for her bed; she is clothed in fine linen and purple."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Advance preparation for adversity eliminates fear and ensures provision.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Build an emergency fund of 3-12 months of expenses; invest in durable quality (insurance, resilient assets) to mitigate seasonal or economic risks.</li></ul></div>
+<div class="tags"><span class="tag">Saving, Preparation & Emergency Readiness</span></div>
+<div class="sources"><span class="source grok">grok</span></div>
+</div></div><div class="book-chapter" id="chap10">
+<div class="book-chapter-header">
+<div class="book-number">10</div>
+<div>
+<div class="book-title">The Blessing of Giving: Wealth That Multiplies</div>
+<div class="book-count">5 Proverbs sourced</div>
+</div>
+</div>
+<div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 3:9-10</span>
+</div>
+<div class="proverb-text">"Honor the Lord with your wealth, with the firstfruits of all your crops; then your barns will be filled to overflowing, and your vats will brim over with new wine."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Prioritizing generosity and stewardship leads to provision and abundance.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Allocate a portion of income to giving or charitable causes first.</li><li>Set aside a percentage of salary for tithing or charitable donations first.</li></ul></div>
+<div class="tags"><span class="tag">Generosity, Giving & Social Responsibility</span></div>
+<div class="sources"><span class="source chatgpt">chatgpt</span><span class="source gemini">gemini</span><span class="source grok">grok</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 11:24-25</span>
+</div>
+<div class="proverb-text">"One person gives freely, yet gains even more; another withholds unduly, but comes to poverty. A generous person will prosper; whoever refreshes others will be refreshed."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Strategic generosity and circulation of resources promote growth and prosperity.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Incorporate regular charitable giving or tithing into your budget; it fosters discipline, potential tax advantages, and often correlates with unexpected financial blessings.</li></ul></div>
+<div class="tags"><span class="tag">Generosity, Giving & Social Responsibility</span></div>
+<div class="sources"><span class="source chatgpt">chatgpt</span><span class="source grok">grok</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 19:17</span>
+</div>
+<div class="proverb-text">"Whoever is kind to the poor lends to the Lord, and he will reward them for what they have done."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Supporting the poor generates both moral and eventual return.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Incorporate charitable giving and social impact investing as part of a balanced financial plan.</li></ul></div>
+<div class="tags"><span class="tag">Generosity, Giving & Social Responsibility</span></div>
+<div class="sources"><span class="source chatgpt">chatgpt</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 22:9</span>
+</div>
+<div class="proverb-text">"The generous will themselves be blessed, for they share their food with the poor."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Generosity results in both moral and practical blessing.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Include giving as a line item in your financial plan; charitable contributions can provide tax benefits and build community goodwill.</li></ul></div>
+<div class="tags"><span class="tag">Generosity, Giving & Social Responsibility</span></div>
+<div class="sources"><span class="source chatgpt">chatgpt</span><span class="source grok">grok</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 31:20</span>
+</div>
+<div class="proverb-text">"She opens her arms to the poor and extends her hands to the needy."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Generosity toward the needy is integral to a prosperous and noble life.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Include regular donations in your budget; philanthropy can offer tax benefits and strengthen community networks.</li></ul></div>
+<div class="tags"><span class="tag">Generosity, Giving & Social Responsibility</span></div>
+<div class="sources"><span class="source grok">grok</span></div>
+</div></div><div class="book-chapter" id="chap11">
+<div class="book-chapter-header">
+<div class="book-number">11</div>
+<div>
+<div class="book-title">The Foundation of True Riches: Building Wealth with Honor</div>
+<div class="book-count">10 Proverbs sourced</div>
+</div>
+</div>
+<div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 1:10-19</span>
+</div>
+<div class="proverb-text">"My son, if sinful men come to you, do not go along with them. If they say, 'Come along with us; let's lie in wait for innocent blood, let's ambush some harmless soul; let's swallow them alive, like the grave, and whole, like those who go down to the pit; we will get all sorts of valuable things and fill our houses with plunder; cast lots with us; we will all share the loot'—my son, do not go along with them, do not set foot on their paths; for their feet rush into evil, they are swift to shed blood. How useless to spread a net where every bird can see it! These men lie in wait for their own blood; they ambush only themselves! Such are the paths of all who go after ill-gotten gain; it takes away the life of those who get it."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Pursuing wealth through dishonest or violent schemes ultimately destroys the participants.</li><li>"Get-rich-quick" schemes and predatory wealth accumulation inherently carry catastrophic risk and ultimately destroy the investor.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Avoid get-rich-quick schemes, fraud, insider trading, or illegal ventures.</li><li>Avoid high-risk, opaque, or predatory financial vehicles (Ponzi schemes, meme stocks, unregulated crypto platforms).</li></ul></div>
+<div class="tags"><span class="tag">Integrity & Ethical Wealth</span><span class="tag">Risk Management & Prudence</span></div>
+<div class="sources"><span class="source chatgpt">chatgpt</span><span class="source gemini">gemini</span><span class="source grok">grok</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 10:2</span>
+</div>
+<div class="proverb-text">"Ill-gotten treasures have no lasting value, but righteousness delivers from death."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Wealth acquired unethically lacks enduring value.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Choose ethical investments and avoid corrupt practices.</li></ul></div>
+<div class="tags"><span class="tag">Integrity & Ethical Wealth</span></div>
+<div class="sources"><span class="source grok">grok</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 11:1</span>
+</div>
+<div class="proverb-text">"The Lord detests dishonest scales, but accurate weights find favor with him."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Honest measurement and fairness in transactions are foundational to sustainable wealth.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Maintain integrity in pricing, contracts, and reporting. Ethical business practices build trust, brand equity, and long-term profitability.</li></ul></div>
+<div class="tags"><span class="tag">Integrity & Ethical Wealth</span></div>
+<div class="sources"><span class="source chatgpt">chatgpt</span><span class="source grok">grok</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 11:24-26</span>
+</div>
+<div class="proverb-text">"One person gives freely, yet gains even more; another withholds unduly, but comes to poverty. A generous person will prosper; whoever refreshes others will be refreshed. People curse the one who hoards grain, but they pray God’s blessing on the one who is willing to sell."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Hoarding assets to artificially inflate prices harms society, whereas facilitating commerce generates sustainable wealth.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Avoid monopolistic practices, market manipulation, or hoarding critical inventory to price-gouge.</li></ul></div>
+<div class="tags"><span class="tag">Integrity & Ethical Wealth</span><span class="tag">Generosity, Giving & Social Responsibility</span></div>
+<div class="sources"><span class="source gemini">gemini</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 11:26</span>
+</div>
+<div class="proverb-text">"People curse the one who hoards grain, but they pray God’s blessing on the one who is willing to sell."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Hoarding essential goods for profit harms reputation and society.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Avoid exploitative pricing or supply manipulation. Ethical market participation builds sustainable customer relationships.</li></ul></div>
+<div class="tags"><span class="tag">Integrity & Ethical Wealth</span></div>
+<div class="sources"><span class="source chatgpt">chatgpt</span><span class="source grok">grok</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 16:11</span>
+</div>
+<div class="proverb-text">"Honest scales and balances belong to the Lord; all the weights in the bag are of his making."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Accurate measurement and honest accounting are non-negotiable.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Maintain transparent bookkeeping, audits, and financial reporting. Compliance prevents legal and financial penalties.</li></ul></div>
+<div class="tags"><span class="tag">Integrity & Ethical Wealth</span></div>
+<div class="sources"><span class="source chatgpt">chatgpt</span><span class="source gemini">gemini</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 16:8</span>
+</div>
+<div class="proverb-text">"Better a little with righteousness than much gain with injustice."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Rightly earned income is superior to large unethical gains.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Avoid unethical business practices or investments even if they promise higher returns.</li></ul></div>
+<div class="tags"><span class="tag">Integrity & Ethical Wealth</span></div>
+<div class="sources"><span class="source chatgpt">chatgpt</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 20:10</span>
+</div>
+<div class="proverb-text">"Differing weights and differing measures—the Lord detests them both."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Using inconsistent standards in trade is a form of fraud.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Apply consistent pricing, fair policies, and standardized processes in business.</li></ul></div>
+<div class="tags"><span class="tag">Integrity & Ethical Wealth</span></div>
+<div class="sources"><span class="source chatgpt">chatgpt</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 21:6</span>
+</div>
+<div class="proverb-text">"A fortune made by a lying tongue is a fleeting vapor and a deadly snare."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Wealth obtained through deception is unstable and destructive.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Avoid scams, dishonest sales tactics, or misrepresentation. Ill-gotten gains carry legal, financial, and reputational risk.</li></ul></div>
+<div class="tags"><span class="tag">Integrity & Ethical Wealth</span></div>
+<div class="sources"><span class="source chatgpt">chatgpt</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 22:16</span>
+</div>
+<div class="proverb-text">"One who oppresses the poor to increase his wealth and one who gives gifts to the rich—both come only to poverty."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Exploiting the vulnerable or currying favor with the wealthy for gain leads to financial ruin.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Avoid predatory business practices or investments that exploit disadvantage; focus on fair, value-creating ventures.</li></ul></div>
+<div class="tags"><span class="tag">Integrity & Ethical Wealth</span></div>
+<div class="sources"><span class="source chatgpt">chatgpt</span><span class="source grok">grok</span></div>
+</div></div><div class="book-chapter" id="chap12">
+<div class="book-chapter-header">
+<div class="book-number">12</div>
+<div>
+<div class="book-title">The Power of Hard Work: From Laziness to Leadership</div>
+<div class="book-count">7 Proverbs sourced</div>
+</div>
+</div>
+<div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 10:4-5</span>
+</div>
+<div class="proverb-text">"Lazy hands make for poverty, but diligent hands bring wealth. He who gathers crops in summer is a prudent son, but he who sleeps during harvest is a disgraceful son."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Diligence produces wealth; laziness produces poverty.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Work consistently and seize opportunities.</li><li>Develop strong professional discipline.</li></ul></div>
+<div class="tags"><span class="tag">Diligence, Work & Productivity</span></div>
+<div class="sources"><span class="source chatgpt">chatgpt</span><span class="source gemini">gemini</span><span class="source grok">grok</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 10:26</span>
+</div>
+<div class="proverb-text">"As vinegar to the teeth and smoke to the eyes, so are sluggards to those who send them."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Laziness harms employers and destroys trust.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Be dependable and diligent to maintain income stability.</li></ul></div>
+<div class="tags"><span class="tag">Diligence, Work & Productivity</span></div>
+<div class="sources"><span class="source grok">grok</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 12:11</span>
+</div>
+<div class="proverb-text">"Those who work their land will have abundant food, but those who chase fantasies have no sense."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Consistent productive work yields provision; chasing empty opportunities leads to loss.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Focus on stable income streams, skill-building, and productive ventures instead of speculative distractions.</li></ul></div>
+<div class="tags"><span class="tag">Diligence, Work & Productivity</span></div>
+<div class="sources"><span class="source chatgpt">chatgpt</span><span class="source grok">grok</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 12:24</span>
+</div>
+<div class="proverb-text">"Diligent hands will rule, but laziness ends in forced labor."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Diligence leads to leadership and financial independence, while laziness leads to dependency.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Develop consistent work habits and competence to move from being managed to managing others or owning income-producing assets.</li></ul></div>
+<div class="tags"><span class="tag">Diligence, Work & Productivity</span></div>
+<div class="sources"><span class="source chatgpt">chatgpt</span><span class="source grok">grok</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 18:9</span>
+</div>
+<div class="proverb-text">"One who is slack in his work is brother to one who destroys."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Laziness and wastefulness both destroy resources.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Improve efficiency in business and personal finance by eliminating wasteful spending.</li></ul></div>
+<div class="tags"><span class="tag">Diligence, Work & Productivity</span></div>
+<div class="sources"><span class="source chatgpt">chatgpt</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 20:4</span>
+</div>
+<div class="proverb-text">"Sluggards do not plow in season; so at harvest time they look but find nothing."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Failing to deploy capital or effort during preparatory seasons guarantees lack of yield.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Invest during bear markets or recessions when assets are out of favor.</li></ul></div>
+<div class="tags"><span class="tag">Diligence, Work & Productivity</span><span class="tag">Risk Management & Prudence</span></div>
+<div class="sources"><span class="source gemini">gemini</span></div>
+</div><div class="proverb-card">
+<div class="proverb-header">
+<span class="biblical-ref">Proverbs 31:13-15</span>
+</div>
+<div class="proverb-text">"She selects wool and flax and works with eager hands. She is like the merchant ships, bringing her food from afar. She gets up while it is still night; she provides food for her family and portions for her female servants."</div>
+<div class="section"><div class="section-title">💡 Principles</div><ul class="section-content"><li>Early and proactive diligence in sourcing and provision ensures household well-being.</li></ul></div>
+<div class="section"><div class="section-title">💼 Modern Applications</div><ul class="section-content"><li>Adopt early-morning habits for financial planning (review budgets, investments); diversify income sources like side hustles.</li></ul></div>
+<div class="tags"><span class="tag">Diligence, Work & Productivity</span></div>
+<div class="sources"><span class="source grok">grok</span></div>
+</div></div></div>
+
+<div class="nav-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Top</div>
+</body>
+</html>
